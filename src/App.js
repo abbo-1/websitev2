@@ -1,8 +1,11 @@
 import './App.css';
+import Navbar from './components/Navbar.js'
+import isSticky from './components/useSticky.js'
 
 function App() {
   return (
     <div class='background'>
+    <Navbar sticky={isSticky} />
       <header>
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -11,6 +14,9 @@ function App() {
           asdf
         </a>
       </header>
+      <p>
+        
+      </p>
     </div>
   );
 }
