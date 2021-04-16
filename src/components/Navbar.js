@@ -9,9 +9,14 @@ const Navbar = ({ sticky }) => (
       {sticky ? <img src={logo} alt="logo" className="navbarLogo" /> : null}
     </div>
 
-    <ul className="navbarLinks">
-      <li className="navbar--link-item">Home</li>
-    </ul>
+    <div  className="navbarLinks">
+        <button className="navbarBTN">
+            My Background
+        </button>
+        <button className="navbarBTN">
+            My Work
+        </button>
+    </div>
 
   </nav>
 )

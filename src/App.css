@@ -8,7 +8,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
   font-size: calc(10px + 2vmin);
   height: 100vh;
   color: white;
@@ -34,32 +33,27 @@
   left: 0;
   box-shadow: 1px 1px 1px #222;
   animation: moveDown 0.5s ease-in-out;
-}
-
-.navbarLinks {
-  text-align: right;
+  /* display: block; */
 }
 
 .navbarLogo {
   max-width: 50%;
   height: auto;
   text-align: left;
+  display: inline-block
 }
 
-@keyframes moveDown {
-  from {
-    transform: translateY(-5rem);
-  }
-  to {
-    transform: translateY(0rem);
-  }
+
+.navbarLinks {
+  display: inline-block;
+  position: absolute;
+  margin-left: 80%;
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotateY(360deg);
-  }
-  100% {
-    transform: rotateY(0rem);
-  }
+.navbarBTN {
+  color: red
+}
+
+.button:hover {
+  cursor: pointer;
 }

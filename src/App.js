@@ -7,12 +7,7 @@ function App() {
     <div class='background'>
     <Navbar sticky={isSticky} />
       <header>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a>
-          asdf
-        </a>
+{/* Some information */}
       </header>
       <p>
         
