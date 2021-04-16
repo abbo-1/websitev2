@@ -6,7 +6,7 @@
   background-image: url("./images/background.png");
   background-color: #1f2532;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   font-size: calc(10px + 2vmin);
   height: 100vh;
@@ -40,7 +40,9 @@
   max-width: 50%;
   height: auto;
   text-align: left;
-  display: inline-block
+  margin-left: 5%;
+  display: inline-block;
+  padding: 10px;
 }
 
 
@@ -48,12 +50,57 @@
   display: inline-block;
   position: absolute;
   margin-left: 80%;
+
 }
 
 .navbarBTN {
-  color: red
+  color: white;
+  background: transparent;
+  border: none;
+  margin: 5px;
+  font-family : inherit;
+  font-size: 16pt;
 }
 
-.button:hover {
+button:hover {
   cursor: pointer;
+}
+
+#greetingDiv {
+  margin-top: 84px;
+  background: transparent;
+}
+
+#coffeepic {
+  max-width: 90%;
+  height: 75vh ;
+}
+
+#greetingsText {
+  font-family : inherit;
+  text-transform: bold;
+}
+
+#textNextToCoffeePic {
+  font-family : inherit;
+}
+
+#resumeBTN {
+  background: linear-gradient(100deg, #f9643d, #fe2a77);
+  text-transform: uppercase;
+  border: 2px solid #fbff07;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 15px;
+  padding: 10px 40px;
+}
+
+.left {
+  display: inline-block;
+  width: 50%;
+}
+
+.right {
+  display: inline-block;
+  width: 50%;
 }

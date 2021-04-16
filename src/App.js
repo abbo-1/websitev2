@@ -1,14 +1,14 @@
 import './App.css';
 import Navbar from './components/Navbar.js'
 import isSticky from './components/useSticky.js'
+import Greetings from './components/Greetings.js'
 
 function App() {
   return (
     <div class='background'>
     <Navbar sticky={isSticky} />
-      <header>
-{/* Some information */}
-      </header>
+      <header/>
+      <Greetings />
       <p>
         
       </p>

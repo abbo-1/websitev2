@@ -11,10 +11,10 @@ const Navbar = ({ sticky }) => (
 
     <div  className="navbarLinks">
         <button className="navbarBTN">
-            My Background
+            Background
         </button>
         <button className="navbarBTN">
-            My Work
+            Work
         </button>
     </div>
 
