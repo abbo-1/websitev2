@@ -6,9 +6,9 @@
   background-image: url("./images/background.png");
   background-color: #1f2532;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: repeat-y;
   background-size: cover;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(12px + 2vmin);
   height: 100vh;
   color: white;
   min-height: 100vh;
@@ -74,15 +74,23 @@ button:hover {
 #coffeepic {
   max-width: 90%;
   height: 75vh ;
+  display:block;
+  margin:auto;
 }
 
 #greetingsText {
   font-family : inherit;
   text-transform: bold;
+  display:block;
+  margin:auto;
+  font-size: 18px;
 }
 
 #textNextToCoffeePic {
   font-family : inherit;
+  display:block;
+  margin:auto;
+  font-size: 16px;
 }
 
 #resumeBTN {
@@ -95,12 +103,20 @@ button:hover {
   padding: 10px 40px;
 }
 
-.left {
-  display: inline-block;
-  width: 50%;
-}
+/* .left { */
+  /* display: inline-block; */
+  /* width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em; */
 
-.right {
-  display: inline-block;
-  width: 50%;
-}
+/* } */
+
+/* .right { */
+  /* display: inline-block; */
+  /* width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em; */
+
+/* } */
