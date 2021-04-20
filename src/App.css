@@ -67,13 +67,13 @@ button:hover {
 }
 
 #greetingDiv {
-  margin-top: 84px;
+  margin-top: 50px;
   background: transparent;
 }
 
 #coffeepic {
   max-width: 90%;
-  height: 75vh ;
+  max-height: 75vh ;
   display:block;
   margin:auto;
 }
@@ -83,14 +83,17 @@ button:hover {
   text-transform: bold;
   display:block;
   margin:auto;
-  font-size: 18px;
+  font-size: 20pt;
 }
 
-#textNextToCoffeePic {
+#text {
   font-family : inherit;
   display:block;
-  margin:auto;
-  font-size: 16px;
+  margin: 0 auto;
+  margin-right: 10%;
+  font-size: 16pt;
+  padding: 3% 3% 3% 0;
+
 }
 
 #resumeBTN {
@@ -112,7 +115,25 @@ button:hover {
 
 /* } */
 
-/* .right { */
+#right {
+  /* margin: 0;
+  position: absolute;
+  width: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
+  height: 75vh;
+  float: right;
+}
+
+#left {
+  /* margin: 0;
+  position: absolute;
+  width: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
+  height: 75vh;
+  float: left;
+}
   /* display: inline-block; */
   /* width: 50%;
   justify-content: center;
