@@ -1,14 +1,12 @@
 import { Row, Col, Alert, Container} from "react-bootstrap";
 
-
-
 function Skills() {
     return (
         <Container className="background2">
         <Row>
             <Col className="w-10  d-inline-block">
             <div class="col-12 col-md-2">
-				<h2>Skills</h2>
+				<h2>-Skills</h2>
 			</div>
             </Col>
             <Col className="w-90  d-inline-block">

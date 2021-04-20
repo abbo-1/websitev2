@@ -9,7 +9,6 @@
   background-repeat: repeat-y;
   background-size: cover;
   font-size: calc(12px + 2vmin);
-  height: 100vh;
   color: white;
   min-height: 100vh;
   box-shadow: 0 4px 2px -2px black;
@@ -23,6 +22,18 @@
   color: black;
   min-height: 50vh;
   min-width: 100%;
+  padding-top: 50px;
+}
+
+.background3 {
+  background-image: url("./images/background6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  min-height: 50vh;
+  min-width: 100%;
+  padding-top: 50px;
 }
 
 
@@ -80,6 +91,7 @@ button:hover {
 
 #greetingDiv {
   margin-top: 50px;
+  padding-bottom: 50px;
   background: transparent;
 }
 
@@ -156,4 +168,41 @@ button:hover {
 
 #skillIcons {
     font-size: 7rem;
+}
+
+
+.contactLogos {
+  width: 42px;
+  margin-bottom: 5px;
+}
+
+.contactHeader {
+  margin-bottom: 20px;
+}
+
+.linkButtons {
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 2px solid #232323;
+  background-color: #fbff07;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #232323;
+}
+
+a.linkButtons:hover {
+  background-color: #f0326b;
+  color: #232323;
+}
+
+.plainContactText {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #232323;
+}
+
+.resume:hover {
+  background-color: #fbff07;
 }
