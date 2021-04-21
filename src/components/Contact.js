@@ -19,6 +19,12 @@ const theme = createMuiTheme({
     },
   });
 
+const copyToClipboard = (e) => {
+    this.textArea.select();
+    document.execCommand('copy');
+
+  };
+
 function Contact() {
     return (
         <Container className="background3">
@@ -27,31 +33,38 @@ function Contact() {
             <Col className="w-33.3  d-inline-block">
             <div class="text-center">
             <img src={github}  class="contactLogos" alt="Github Logo" />
-					<h3 class="contactHeader">GITHUB</h3>
-                    <Button variant="contained" color="primary" href="https://github.com/abbo-1" target="_blank">Take Me There</Button>
+					{/* <h3 class="contactHeader">GITHUB</h3> */}
+                    <p/>
+                    <Button variant="contained" size="large" color="primary" href="https://github.com/abbo-1" target="_blank">GITHUB</Button>
                     {/* <a class="linkButtons" href="https://github.com/abbo-1" target="_blank">Take Me There</a> */}
-					<p class="plainContactText" >Plain Text: 
-					https://github.com/abbo-1</p>
+                    <p/>
+					<p class="plainContactText">Plain Text:</p>
+                    <p class="plainContactText">https://github.com/abbo-1</p>
+                    
             </div>
             </Col>
             <Col className="w-33.3  d-inline-block">
             <div class="text-center">
             <img src={email}  class="contactLogos" alt="Email Icon" />
-					<h3 class="contactHeader">E-MAIL</h3>
+					{/* <h3 class="contactHeader">E-MAIL</h3> */}
 					{/* <a class="linkButtons" href="mailto:abbott.kevinj@gmail.com">E-mail Directly</a> */}
-                    <Button variant="contained" color="primary" href="mailto:abbott.kevinj@gmail.com" target="_blank">E-mail Directly</Button>
-					<p class="plainContactText">Plain Text: 
-					abbott.kevinj@gmail.com</p>
+                    <p/>
+                    <Button variant="contained" size="large" color="primary" href="mailto:abbott.kevinj@gmail.com" target="_blank">E-mail Directly</Button>
+                    <p/>
+					<p class="plainContactText">Plain Text: </p>
+					<p class="plainContactText">abbott.kevinj@gmail.com</p>
             </div>
             </Col>
             <Col className="w-33.3  d-inline-block">
             <div class="text-center">
             <img src={linkedin}  class="contactLogos" alt="LinkedIn Logo" />
-					<h3 class="contactHeader">LINKED IN</h3>
-                    <Button variant="contained" color="primary" href="https://www.linkedin.com/in/kevin-abbott-bb23268b" target="_blank">Take Me There</Button>
+					{/* <h3 class="contactHeader">LINKED IN</h3> */}
+                    <p/>
+                    <Button variant="contained" size="large" color="primary" href="https://www.linkedin.com/in/kevin-abbott-bb23268b" target="_blank">LINKEDIN</Button>
 					{/* <a class="linkButtons" href="https://www.linkedin.com/in/kevin-abbott-bb23268b" target="_blank">Take Me There</a> */}
-					<p class="plainContactText">Plain Text:
-					https://www.linkedin.com/in/kevin-abbott-bb23268b</p>
+                    <p/>
+					<p class="plainContactText">Plain Text:</p>
+					<p class="plainContactText">https://www.linkedin.com/in/kevin-abbott-bb23268b</p>
             </div>
             </Col>
             </ThemeProvider >
