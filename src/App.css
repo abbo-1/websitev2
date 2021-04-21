@@ -206,3 +206,7 @@ a.linkButtons:hover {
 .resume:hover {
   background-color: #fbff07;
 }
+
+.text-center {
+  text-align: center;
+}
