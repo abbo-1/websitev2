@@ -1,3 +1,4 @@
+import React from "react"
 import { Row, Col, Container} from "react-bootstrap";
 import Button from '@material-ui/core/Button';
 import github from "../images/github.png"
@@ -6,7 +7,11 @@ import email from "../images/email.png"
 
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-// import { Alert, AlertTitle } from '@material-ui/lab';
+import { Alert, AlertTitle } from '@material-ui/lab';
+import Snackbar from '@material-ui/core/Snackbar';
+import MuiAlert from '@material-ui/lab/Alert';
+import { makeStyles } from '@material-ui/core/styles';
+
 
 import useClipboard from "react-use-clipboard";
 
@@ -25,19 +30,69 @@ const theme = createMuiTheme({
     },
   });
 
-
 function Contact() {
 
     const [isCopied, setCopied] = useClipboard("https://github.com/abbo-1");
     const [isCopied2, setCopied2] = useClipboard("abbott.kevinj@gmail.com");
     const [isCopied3, setCopied3] = useClipboard("https://www.linkedin.com/in/kevin-abbott-bb23268b");
 
+    function Alert(props) {
+        return <MuiAlert elevation={6} variant="filled" {...props} />;
+      }
+      
+      const useStyles = makeStyles((theme) => ({
+        root: {
+          width: '100%',
+          '& > * + *': {
+            marginTop: theme.spacing(2),
+          },
+        },
+      }));
 
-    // <Alert severity="success">
-    // <AlertTitle>Success</AlertTitle>
-    // This is a success alert — <strong>check it out!</strong>
+      const classes = useStyles();
+      const [openGithub, setOpenGithub] = React.useState(false);
+    
+      const handleClickGithub = () => {
+        setOpenGithub(true);
+      };
 
-    // </Alert>
+      const handleCloseGithub = (event, reason) => {
+        if (reason === 'clickaway') {
+          return;
+        }
+    
+        setOpenEmail(false);
+      };
+
+      const [openLinkedIn, setopenLinkedIn] = React.useState(false);
+
+      const handleClickLinkedIn = () => {
+        setopenLinkedIn(true);
+      };
+
+      const handleCloseLinkedIn = (event, reason) => {
+        if (reason === 'clickaway') {
+          return;
+        }
+    
+        setOpenEmail(false);
+      };
+
+
+      const [openEmail, setOpenEmail] = React.useState(false);
+
+      const handleClickEmail = () => {
+        setOpenEmail(true);
+      };
+    
+      const handleCloseEmail = (event, reason) => {
+        if (reason === 'clickaway') {
+          return;
+        }
+    
+        setOpenEmail(false);
+      };
+      
 
     return (
         <Container className="background3">
@@ -51,7 +106,7 @@ function Contact() {
                     <Button variant="contained" size="large" color="primary" href="https://github.com/abbo-1" target="_blank">GITHUB</Button>
                     {/* <a class="linkButtons" href="https://github.com/abbo-1" target="_blank">Take Me There</a> */}
                     <p/>
-                    <Button variant="contained" size="large" color="secondary" onClick={setCopied}>Copy to Clipboard</Button>
+                    <Button variant="contained" size="large" color="secondary" onClick={setCopied} onClick={handleClickGithub}>Copy to Clipboard</Button>
                     
             </div>
             </Col>
@@ -63,7 +118,7 @@ function Contact() {
                     <p/>
                     <Button variant="contained" size="large" color="primary" href="mailto:abbott.kevinj@gmail.com" target="_blank">E-mail Directly</Button>
                     <p/>
-                    <Button variant="contained" size="large" color="secondary" onClick={setCopied2}>Copy to Clipboard</Button>
+                    <Button variant="contained" size="large" color="secondary" onClick={setCopied2} onClick={handleClickEmail}>Copy to Clipboard</Button>
             </div>
             </Col>
             <Col className="w-33.3  d-inline-block">
@@ -74,10 +129,33 @@ function Contact() {
                     <Button variant="contained" size="large" color="primary" href="https://www.linkedin.com/in/kevin-abbott-bb23268b" target="_blank">LINKEDIN</Button>
 					{/* <a class="linkButtons" href="https://www.linkedin.com/in/kevin-abbott-bb23268b" target="_blank">Take Me There</a> */}
                     <p/>
-                    <Button variant="contained" size="large" color="secondary" onClick={setCopied3}>Copy to Clipboard</Button>
+                    <Button variant="contained" size="large" color="secondary" onClick={setCopied3} onClick={handleClickLinkedIn}>Copy to Clipboard</Button>
 
             </div>
             </Col>
+
+            <div className={classes.root}>
+
+            <Snackbar open={openLinkedIn} autoHideDuration={6000} onClose={handleCloseLinkedIn}>
+            <Alert onClose={handleCloseLinkedIn} severity="success">
+            Kevin's LinkedIn URL successfully copied!
+            </Alert>
+            </Snackbar>
+
+            <Snackbar open={openEmail} autoHideDuration={6000} onClose={handleCloseEmail}>
+            <Alert onClose={handleCloseEmail} severity="success">
+            Kevin's e-mail address successfully copied!
+            </Alert>
+            </Snackbar>
+            
+            <Snackbar open={openGithub} autoHideDuration={6000} onClose={handleCloseGithub}>
+            <Alert onClose={handleCloseGithub} severity="success">
+            Kevin's Github URL successfully copied!
+            </Alert>
+            </Snackbar>
+
+            </div>
+
             </ThemeProvider >
         </Row>
         </Container>
