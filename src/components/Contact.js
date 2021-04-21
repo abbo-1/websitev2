@@ -7,6 +7,8 @@ import email from "../images/email.png"
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 
+import useClipboard from "react-use-clipboard";
+
 // const linkedInClick = () => {
 //     window.open("https://www.linkedin.com/in/kevin-abbott-bb23268b", "_blank",)
 // }
@@ -17,15 +19,18 @@ const theme = createMuiTheme({
         main: '#fbff07'
       },
     },
+    secondary: {
+        main: '#f0326b'
+    },
   });
 
-const copyToClipboard = (e) => {
-    this.textArea.select();
-    document.execCommand('copy');
-
-  };
 
 function Contact() {
+
+    const [isCopied, setCopied] = useClipboard("https://github.com/abbo-1");
+    const [isCopied2, setCopied2] = useClipboard("abbott.kevinj@gmail.com");
+    const [isCopied3, setCopied3] = useClipboard("https://www.linkedin.com/in/kevin-abbott-bb23268b");
+
     return (
         <Container className="background3">
         <Row>
@@ -38,8 +43,7 @@ function Contact() {
                     <Button variant="contained" size="large" color="primary" href="https://github.com/abbo-1" target="_blank">GITHUB</Button>
                     {/* <a class="linkButtons" href="https://github.com/abbo-1" target="_blank">Take Me There</a> */}
                     <p/>
-					<p class="plainContactText">Plain Text:</p>
-                    <p class="plainContactText">https://github.com/abbo-1</p>
+                    <Button variant="contained" size="large" color="secondary" onClick={setCopied}>Copy to Clipboard</Button>
                     
             </div>
             </Col>
@@ -51,8 +55,7 @@ function Contact() {
                     <p/>
                     <Button variant="contained" size="large" color="primary" href="mailto:abbott.kevinj@gmail.com" target="_blank">E-mail Directly</Button>
                     <p/>
-					<p class="plainContactText">Plain Text: </p>
-					<p class="plainContactText">abbott.kevinj@gmail.com</p>
+                    <Button variant="contained" size="large" color="secondary" onClick={setCopied2}>Copy to Clipboard</Button>
             </div>
             </Col>
             <Col className="w-33.3  d-inline-block">
@@ -63,8 +66,7 @@ function Contact() {
                     <Button variant="contained" size="large" color="primary" href="https://www.linkedin.com/in/kevin-abbott-bb23268b" target="_blank">LINKEDIN</Button>
 					{/* <a class="linkButtons" href="https://www.linkedin.com/in/kevin-abbott-bb23268b" target="_blank">Take Me There</a> */}
                     <p/>
-					<p class="plainContactText">Plain Text:</p>
-					<p class="plainContactText">https://www.linkedin.com/in/kevin-abbott-bb23268b</p>
+                    <Button variant="contained" size="large" color="secondary" onClick={setCopied3}>Copy to Clipboard</Button>
             </div>
             </Col>
             </ThemeProvider >
