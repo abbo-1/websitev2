@@ -1,4 +1,4 @@
-import { Row, Col, Alert, Container} from "react-bootstrap";
+import { Row, Col, Container} from "react-bootstrap";
 import Button from '@material-ui/core/Button';
 import github from "../images/github.png"
 import linkedin from "../images/linkedin.png"
@@ -6,6 +6,7 @@ import email from "../images/email.png"
 
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
+// import { Alert, AlertTitle } from '@material-ui/lab';
 
 import useClipboard from "react-use-clipboard";
 
@@ -30,6 +31,13 @@ function Contact() {
     const [isCopied, setCopied] = useClipboard("https://github.com/abbo-1");
     const [isCopied2, setCopied2] = useClipboard("abbott.kevinj@gmail.com");
     const [isCopied3, setCopied3] = useClipboard("https://www.linkedin.com/in/kevin-abbott-bb23268b");
+
+
+    // <Alert severity="success">
+    // <AlertTitle>Success</AlertTitle>
+    // This is a success alert — <strong>check it out!</strong>
+
+    // </Alert>
 
     return (
         <Container className="background3">
@@ -67,6 +75,7 @@ function Contact() {
 					{/* <a class="linkButtons" href="https://www.linkedin.com/in/kevin-abbott-bb23268b" target="_blank">Take Me There</a> */}
                     <p/>
                     <Button variant="contained" size="large" color="secondary" onClick={setCopied3}>Copy to Clipboard</Button>
+
             </div>
             </Col>
             </ThemeProvider >
