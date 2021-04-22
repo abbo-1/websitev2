@@ -107,7 +107,7 @@ button:hover {
   text-transform: bold;
   display:block;
   margin:auto;
-  font-size: 20pt;
+  font-size: 30pt;
 }
 
 #text {
@@ -168,12 +168,13 @@ button:hover {
 
 #skillIcons {
     font-size: 7rem;
+    color:#1f2532;
 }
 
 
 .contactLogos {
   width: 42px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .contactHeader {
@@ -209,4 +210,5 @@ a.linkButtons:hover {
 
 .text-center {
   text-align: center;
+  margin-bottom: 40px;
 }

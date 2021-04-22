@@ -24,11 +24,15 @@ const theme = createMuiTheme({
       primary: {
         main: '#fbff07'
       },
-    },
+      action: {
+          hover: 'green'
+      },
     secondary: {
-        main: '#f0326b'
+        //main: '#f0326b'
+        main: '#1f2532'
     },
-  });
+},
+});
 
 function Contact() {
 
@@ -98,7 +102,7 @@ function Contact() {
         <Container className="background3">
         <Row>
         <ThemeProvider theme={theme}>
-            <Col className="w-33.3  d-inline-block">
+            <Col xs={12} md={4}>
             <div class="text-center">
             <img src={github}  class="contactLogos" alt="Github Logo" />
 					{/* <h3 class="contactHeader">GITHUB</h3> */}
@@ -110,7 +114,7 @@ function Contact() {
                     
             </div>
             </Col>
-            <Col className="w-33.3  d-inline-block">
+            <Col xs={12} md={4}>
             <div class="text-center">
             <img src={email}  class="contactLogos" alt="Email Icon" />
 					{/* <h3 class="contactHeader">E-MAIL</h3> */}
@@ -121,7 +125,7 @@ function Contact() {
                     <Button variant="contained" size="large" color="secondary" onClick={setCopied2} onClick={handleClickEmail}>Copy to Clipboard</Button>
             </div>
             </Col>
-            <Col className="w-33.3  d-inline-block">
+            <Col xs={12} md={4}>
             <div class="text-center">
             <img src={linkedin}  class="contactLogos" alt="LinkedIn Logo" />
 					{/* <h3 class="contactHeader">LINKED IN</h3> */}

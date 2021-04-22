@@ -1,5 +1,6 @@
 import React from "react"
 import '../App.css';
+import { Row, Col, Container} from "react-bootstrap";
 import logo from '../images/nameSmallLogo.png'
 
 const Navbar = ({ sticky }) => (
