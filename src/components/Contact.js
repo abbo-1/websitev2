@@ -22,10 +22,8 @@ import useClipboard from "react-use-clipboard";
 const theme = createMuiTheme({
     palette: {
       primary: {
-        main: '#fbff07'
-      },
-      action: {
-          hover: 'green'
+        main: '#fbff07',
+        contrastText: 'black'
       },
     secondary: {
         //main: '#f0326b'
@@ -36,9 +34,10 @@ const theme = createMuiTheme({
 
 function Contact() {
 
-    const [isCopied, setCopied] = useClipboard("https://github.com/abbo-1");
-    const [isCopied2, setCopied2] = useClipboard("abbott.kevinj@gmail.com");
-    const [isCopied3, setCopied3] = useClipboard("https://www.linkedin.com/in/kevin-abbott-bb23268b");
+
+    const [isCopiedGithub, setCopiedGithub] = useClipboard("https://github.com/abbo-1");
+    const [isCopiedEmail, setCopiedEmail] = useClipboard("abbott.kevinj@gmail.com");
+    const [isCopiedLinkedIn, setCopiedLinkedIn] = useClipboard("https://www.linkedin.com/in/kevin-abbott-bb23268b");
 
     function Alert(props) {
         return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -54,6 +53,7 @@ function Contact() {
       }));
 
       const classes = useStyles();
+      
       const [openGithub, setOpenGithub] = React.useState(false);
     
       const handleClickGithub = () => {
@@ -65,8 +65,10 @@ function Contact() {
           return;
         }
     
-        setOpenEmail(false);
+        setOpenGithub(false);
       };
+
+    
 
       const [openLinkedIn, setopenLinkedIn] = React.useState(false);
 
@@ -79,7 +81,7 @@ function Contact() {
           return;
         }
     
-        setOpenEmail(false);
+        setopenLinkedIn(false);
       };
 
 
@@ -110,7 +112,8 @@ function Contact() {
                     <Button variant="contained" size="large" color="primary" href="https://github.com/abbo-1" target="_blank">GITHUB</Button>
                     {/* <a class="linkButtons" href="https://github.com/abbo-1" target="_blank">Take Me There</a> */}
                     <p/>
-                    <Button variant="contained" size="large" color="secondary" onClick={setCopied} onClick={handleClickGithub}>Copy to Clipboard</Button>
+                    {/* <Button variant="contained" size="large" color="secondary" onClick={setCopied} onClick={handleClickGithub}>Copy to Clipboard</Button> */}
+                    <Button variant="contained" size="large" color="secondary" onClick={setCopiedGithub, handleClickGithub}>Copy to Clipboard</Button>
                     
             </div>
             </Col>
@@ -122,7 +125,8 @@ function Contact() {
                     <p/>
                     <Button variant="contained" size="large" color="primary" href="mailto:abbott.kevinj@gmail.com" target="_blank">E-mail Directly</Button>
                     <p/>
-                    <Button variant="contained" size="large" color="secondary" onClick={setCopied2} onClick={handleClickEmail}>Copy to Clipboard</Button>
+                    {/* <Button variant="contained" size="large" color="secondary" onClick={setCopied2} onClick={handleClickEmail}>Copy to Clipboard</Button> */}
+                    <Button variant="contained" size="large" color="secondary" onClick={setCopiedEmail, handleClickEmail}>Copy to Clipboard</Button>
             </div>
             </Col>
             <Col xs={12} md={4}>
@@ -133,7 +137,8 @@ function Contact() {
                     <Button variant="contained" size="large" color="primary" href="https://www.linkedin.com/in/kevin-abbott-bb23268b" target="_blank">LINKEDIN</Button>
 					{/* <a class="linkButtons" href="https://www.linkedin.com/in/kevin-abbott-bb23268b" target="_blank">Take Me There</a> */}
                     <p/>
-                    <Button variant="contained" size="large" color="secondary" onClick={setCopied3} onClick={handleClickLinkedIn}>Copy to Clipboard</Button>
+                    {/* <Button variant="contained" size="large" color="secondary" onClick={setCopied3} onClick={handleClickLinkedIn}>Copy to Clipboard</Button> */}
+                    <Button variant="contained" size="large" color="secondary" onClick={setCopiedLinkedIn, handleClickLinkedIn}>Copy to Clipboard</Button>
 
             </div>
             </Col>
@@ -156,9 +161,9 @@ function Contact() {
             <Alert onClose={handleCloseGithub} severity="success">
             Kevin's Github URL successfully copied!
             </Alert>
-            </Snackbar>
+            </Snackbar> 
 
-            </div>
+            </div> 
 
             </ThemeProvider >
         </Row>

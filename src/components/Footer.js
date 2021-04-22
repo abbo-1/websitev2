@@ -3,7 +3,10 @@ import '../App.css';
 
 function Footer() {
 
-    return ("nite"
+    return (
+        <div id="footer">
+            <p id="footerTxt">2021</p>
+        </div>
 )
     }
 

@@ -5,8 +5,8 @@ function Skills() {
 
     return (
         <Container className="background2">
-                        <div id="skillIcons">
-        <Row>
+        <div id="skillIcons">
+        <Row noGutters>
             {/* <div class="col-12 col-md-2">
 				<h2>-Skills</h2>
 			</div> */}
