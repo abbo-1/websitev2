@@ -16,8 +16,11 @@ function NavbarFinal() {
     className="d-inline-block align-top"
   />{' '}
 </Navbar.Brand>
-<Nav.Link href="#features" ClassName="NavbarLink">Background</Nav.Link>
-<Nav.Link href="#pricing">Portfolio</Nav.Link>
+<Nav className="ml-auto" >
+<Nav.Link className="nav-link" href="#features">Things I Made</Nav.Link>
+<Nav.Link href="#pricing">Background</Nav.Link>
+
+</Nav>
 </Navbar>
 )}
 

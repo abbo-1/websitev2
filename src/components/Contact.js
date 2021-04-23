@@ -34,10 +34,14 @@ const theme = createMuiTheme({
 
 function Contact() {
 
-
     const [isCopiedGithub, setCopiedGithub] = useClipboard("https://github.com/abbo-1");
+
+    // useEffect(() => {}
+
     const [isCopiedEmail, setCopiedEmail] = useClipboard("abbott.kevinj@gmail.com");
+
     const [isCopiedLinkedIn, setCopiedLinkedIn] = useClipboard("https://www.linkedin.com/in/kevin-abbott-bb23268b");
+
 
     function Alert(props) {
         return <MuiAlert elevation={6} variant="filled" {...props} />;
