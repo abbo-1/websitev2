@@ -225,3 +225,15 @@ a.linkButtons:hover {
   padding-top: 3%;
   font-size: 12pt
 }
+
+#NavbarFinal {
+  border-bottom: #fbff07 solid 2px
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #f0326b
+}
