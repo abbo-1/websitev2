@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, {useState, useRef, useEffect} from "react"
 import { Row, Col, Container} from "react-bootstrap";
 import Button from '@material-ui/core/Button';
 import github from "../images/github.png"
@@ -33,6 +33,15 @@ const theme = createMuiTheme({
 });
 
 function Contact() {
+
+  const isFirstRun = useRef(true);
+  useEffect (() => {
+    if (isFirstRun.current) {
+      isFirstRun.current = false;
+      return;
+    }
+    console.log("Effect was run");
+});
 
     const [isCopiedGithub, setCopiedGithub] = useClipboard("https://github.com/abbo-1");
 
@@ -153,19 +162,19 @@ function Contact() {
 
             <div className={classes.root}>
 
-            <Snackbar open={openLinkedIn} autoHideDuration={6000} onClose={handleCloseLinkedIn}>
+            <Snackbar open={openLinkedIn} autoHideDuration={1500} onClose={handleCloseLinkedIn}>
             <Alert onClose={handleCloseLinkedIn} severity="success">
             Kevin's LinkedIn URL successfully copied!
             </Alert>
             </Snackbar>
 
-            <Snackbar open={openEmail} autoHideDuration={6000} onClose={handleCloseEmail}>
+            <Snackbar open={openEmail} autoHideDuration={1500} onClose={handleCloseEmail}>
             <Alert onClose={handleCloseEmail} severity="success">
             Kevin's e-mail address successfully copied!
             </Alert>
             </Snackbar>
             
-            <Snackbar open={openGithub} autoHideDuration={6000} onClose={handleCloseGithub}>
+            <Snackbar open={openGithub} autoHideDuration={1500} onClose={handleCloseGithub}>
             <Alert onClose={handleCloseGithub} severity="success">
             Kevin's Github URL successfully copied!
             </Alert>

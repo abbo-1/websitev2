@@ -1,5 +1,6 @@
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
+import Modal from '@material-ui/core/Modal';
 
 import logo from '../images/nameSmallLogo.png'
 
@@ -17,11 +18,21 @@ function NavbarFinal() {
   />{' '}
 </Navbar.Brand>
 <Nav className="ml-auto" >
-<Nav.Link className="nav-link" href="#features">Things I Made</Nav.Link>
+<Nav.Link className="nav-link" href="#features" onClick={openThingsMade}>Things I Made</Nav.Link>
 <Nav.Link href="#pricing">Background</Nav.Link>
-
 </Nav>
 </Navbar>
-)}
+
+
+)
+
+{/* <Modal
+  open={open}
+  onClose={openThingsMade}
+  aria-labelledby="simple-modal-title"
+  aria-describedby="simple-modal-description"
+>
+</Modal> */}
+}
 
 export default NavbarFinal
