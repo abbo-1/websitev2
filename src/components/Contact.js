@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import { Row, Col, Container} from "react-bootstrap";
 import Button from '@material-ui/core/Button';
 import github from "../images/github.png"
@@ -36,12 +36,27 @@ function Contact() {
 
     const [isCopiedGithub, setCopiedGithub] = useClipboard("https://github.com/abbo-1");
 
-    // useEffect(() => {}
+    useEffect(() => {
+        setOpenGithub(true);
+        console.log("Github")}, 
+        [isCopiedGithub]
+        )
 
     const [isCopiedEmail, setCopiedEmail] = useClipboard("abbott.kevinj@gmail.com");
 
+    useEffect(() => {
+        setOpenEmail(true);
+        console.log("Email")}, 
+        [isCopiedEmail]
+        )
+
     const [isCopiedLinkedIn, setCopiedLinkedIn] = useClipboard("https://www.linkedin.com/in/kevin-abbott-bb23268b");
 
+    useEffect(() => {
+        setopenLinkedIn(true);
+        console.log("LinkedIn")}, 
+        [isCopiedLinkedIn]
+        )
 
     function Alert(props) {
         return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -59,47 +74,36 @@ function Contact() {
       const classes = useStyles();
       
       const [openGithub, setOpenGithub] = React.useState(false);
-    
       const handleClickGithub = () => {
         setOpenGithub(true);
       };
-
       const handleCloseGithub = (event, reason) => {
         if (reason === 'clickaway') {
           return;
         }
-    
         setOpenGithub(false);
       };
 
     
-
       const [openLinkedIn, setopenLinkedIn] = React.useState(false);
-
       const handleClickLinkedIn = () => {
-        setopenLinkedIn(true);
+      setopenLinkedIn(true);
       };
-
       const handleCloseLinkedIn = (event, reason) => {
-        if (reason === 'clickaway') {
+          if (reason === 'clickaway') {
           return;
-        }
-    
-        setopenLinkedIn(false);
-      };
-
+      }
+      setopenLinkedIn(false);
+    };
 
       const [openEmail, setOpenEmail] = React.useState(false);
-
       const handleClickEmail = () => {
         setOpenEmail(true);
       };
-    
       const handleCloseEmail = (event, reason) => {
         if (reason === 'clickaway') {
           return;
         }
-    
         setOpenEmail(false);
       };
       
@@ -116,8 +120,8 @@ function Contact() {
                     <Button variant="contained" size="large" color="primary" href="https://github.com/abbo-1" target="_blank">GITHUB</Button>
                     {/* <a class="linkButtons" href="https://github.com/abbo-1" target="_blank">Take Me There</a> */}
                     <p/>
-                    {/* <Button variant="contained" size="large" color="secondary" onClick={setCopied} onClick={handleClickGithub}>Copy to Clipboard</Button> */}
-                    <Button variant="contained" size="large" color="secondary" onClick={setCopiedGithub, handleClickGithub}>Copy to Clipboard</Button>
+                    <Button variant="contained" size="large" color="secondary" onClick={setCopiedGithub}>Copy to Clipboard</Button>
+                    {/* <Button variant="contained" size="large" color="secondary" onClick={setCopiedGithub, handleClickGithub}>Copy to Clipboard</Button> */}
                     
             </div>
             </Col>
@@ -129,8 +133,8 @@ function Contact() {
                     <p/>
                     <Button variant="contained" size="large" color="primary" href="mailto:abbott.kevinj@gmail.com" target="_blank">E-mail Directly</Button>
                     <p/>
-                    {/* <Button variant="contained" size="large" color="secondary" onClick={setCopied2} onClick={handleClickEmail}>Copy to Clipboard</Button> */}
-                    <Button variant="contained" size="large" color="secondary" onClick={setCopiedEmail, handleClickEmail}>Copy to Clipboard</Button>
+                    <Button variant="contained" size="large" color="secondary" onClick={setCopiedEmail}>Copy to Clipboard</Button>
+                    {/* <Button variant="contained" size="large" color="secondary" onClick={setCopiedEmail, handleClickEmail}>Copy to Clipboard</Button> */}
             </div>
             </Col>
             <Col xs={12} md={4}>
@@ -141,8 +145,8 @@ function Contact() {
                     <Button variant="contained" size="large" color="primary" href="https://www.linkedin.com/in/kevin-abbott-bb23268b" target="_blank">LINKEDIN</Button>
 					{/* <a class="linkButtons" href="https://www.linkedin.com/in/kevin-abbott-bb23268b" target="_blank">Take Me There</a> */}
                     <p/>
-                    {/* <Button variant="contained" size="large" color="secondary" onClick={setCopied3} onClick={handleClickLinkedIn}>Copy to Clipboard</Button> */}
-                    <Button variant="contained" size="large" color="secondary" onClick={setCopiedLinkedIn, handleClickLinkedIn}>Copy to Clipboard</Button>
+                    <Button variant="contained" size="large" color="secondary" onClick={setCopiedLinkedIn}>Copy to Clipboard</Button>
+                    {/* <Button variant="contained" size="large" color="secondary" onClick={setCopiedLinkedIn, handleClickLinkedIn}>Copy to Clipboard</Button> */}
 
             </div>
             </Col>
