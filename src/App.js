@@ -8,10 +8,15 @@ import NavbarFinal from './components/NavbarFinal.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+
+function thingsIMade() => {
+
+}
+
   return (
     <div class='background'>
       <header/>
-      <NavbarFinal/>
+      <NavbarFinal />
       <Greetings />
       <Skills />
       <Contact />

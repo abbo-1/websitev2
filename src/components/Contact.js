@@ -162,19 +162,19 @@ function Contact() {
 
             <div className={classes.root}>
 
-            <Snackbar open={openLinkedIn} autoHideDuration={1500} onClose={handleCloseLinkedIn}>
+            <Snackbar open={openLinkedIn} autoHideDuration={2000} onClose={handleCloseLinkedIn}>
             <Alert onClose={handleCloseLinkedIn} severity="success">
             Kevin's LinkedIn URL successfully copied!
             </Alert>
             </Snackbar>
 
-            <Snackbar open={openEmail} autoHideDuration={1500} onClose={handleCloseEmail}>
+            <Snackbar open={openEmail} autoHideDuration={2000} onClose={handleCloseEmail}>
             <Alert onClose={handleCloseEmail} severity="success">
             Kevin's e-mail address successfully copied!
             </Alert>
             </Snackbar>
             
-            <Snackbar open={openGithub} autoHideDuration={1500} onClose={handleCloseGithub}>
+            <Snackbar open={openGithub} autoHideDuration={2000} onClose={handleCloseGithub}>
             <Alert onClose={handleCloseGithub} severity="success">
             Kevin's Github URL successfully copied!
             </Alert>
