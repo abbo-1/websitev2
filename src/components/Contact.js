@@ -42,6 +42,14 @@ function Contact() {
 //     }
 //     console.log("Effect was run");
 // });
+    const [copiedLink, setCopiedLink] = useState(null)
+
+function testFunction() {
+
+    const copyLink = useClipboard("https://google.com");
+    SetCopiedLink = copyLink
+
+    }
 
     const [isCopiedGithub, setCopiedGithub] = useClipboard("https://github.com/abbo-1");
 
@@ -156,6 +164,8 @@ function Contact() {
                     <p/>
                     <Button variant="contained" size="large" color="secondary" onClick={setCopiedLinkedIn}>Copy to Clipboard</Button>
                     {/* <Button variant="contained" size="large" color="secondary" onClick={setCopiedLinkedIn, handleClickLinkedIn}>Copy to Clipboard</Button> */}
+
+                    <Button onclick={testFunction}>Kirk and Spock</Button>
 
             </div>
             </Col>
