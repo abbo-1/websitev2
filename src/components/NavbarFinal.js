@@ -20,7 +20,7 @@ function NavbarFinal( {openThingsMade} ) {
   />{' '}
 </Navbar.Brand>
 <Nav className="ml-auto" >
-<Nav.Link className="nav-link" onClick={openThingsMade} href="#features" >Things I Made</Nav.Link>
+<Nav.Link className="nav-link" href="#features" >Things I Made</Nav.Link>
 <p>.</p>
 <Nav.Link href="#pricing">Background</Nav.Link>
 </Nav>
@@ -28,7 +28,7 @@ function NavbarFinal( {openThingsMade} ) {
 
 
 )
-// 
+// onClick={openThingsMade}
 /* <Modal
   open={open}
   onClose={openThingsMade}

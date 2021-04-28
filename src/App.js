@@ -9,9 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
-function thingsIMade() => {
+// function thingsIMade() => {
 
-}
+// }
 
   return (
     <div class='background'>

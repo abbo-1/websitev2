@@ -34,14 +34,14 @@ const theme = createMuiTheme({
 
 function Contact() {
 
-  const isFirstRun = useRef(true);
-  useEffect (() => {
-    if (isFirstRun.current) {
-      isFirstRun.current = false;
-      return;
-    }
-    console.log("Effect was run");
-});
+//   const isFirstRun = useRef(true);
+//   useEffect (() => {
+//     if (isFirstRun.current) {
+//       isFirstRun.current = false;
+//       return;
+//     }
+//     console.log("Effect was run");
+// });
 
     const [isCopiedGithub, setCopiedGithub] = useClipboard("https://github.com/abbo-1");
 
@@ -82,7 +82,7 @@ function Contact() {
 
       const classes = useStyles();
       
-      const [openGithub, setOpenGithub] = React.useState(false);
+      const [openGithub, setOpenGithub] = useState(false);
       const handleClickGithub = () => {
         setOpenGithub(true);
       };
@@ -94,7 +94,7 @@ function Contact() {
       };
 
     
-      const [openLinkedIn, setopenLinkedIn] = React.useState(false);
+      const [openLinkedIn, setopenLinkedIn] = useState(false);
       const handleClickLinkedIn = () => {
       setopenLinkedIn(true);
       };
@@ -105,7 +105,7 @@ function Contact() {
       setopenLinkedIn(false);
     };
 
-      const [openEmail, setOpenEmail] = React.useState(false);
+      const [openEmail, setOpenEmail] = useState(false);
       const handleClickEmail = () => {
         setOpenEmail(true);
       };
