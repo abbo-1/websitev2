@@ -42,14 +42,22 @@ function Contact() {
 //     }
 //     console.log("Effect was run");
 // });
-    const [copiedLink, setCopiedLink] = useState(null)
 
-function testFunction() {
+const [copiedLink, setCopiedLink] = useState(
+    {id: 1, copyGithub: useClipboard("https://github.com/abbo-1")},
+    {id: 2, copyEmail: useClipboard("abbott.kevinj@gmail.com")},
+    {id: 3, copyLinkedIn: useClipboard("https://github.com/abbo-1")}
 
-    const copyLink = useClipboard("https://google.com");
-    SetCopiedLink = copyLink
+)
 
-    }
+//     const [copiedLink, setCopiedLink] = useState(null)
+
+// function testFunction() {
+
+    // const copyLink = useClipboard("https://google.com");
+    // SetCopiedLink = copyLink
+
+    // }
 
     const [isCopiedGithub, setCopiedGithub] = useClipboard("https://github.com/abbo-1");
 
