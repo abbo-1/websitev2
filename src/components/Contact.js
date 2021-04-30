@@ -135,6 +135,7 @@ const [copiedLink, setCopiedLink] = useState(
 
     return (
         <Container className="background3">
+        <Button onclick={testFunction}>Jim and Pam</Button>
         <Row>
         <ThemeProvider theme={theme}>
             <Col xs={12} md={4}>
@@ -172,8 +173,6 @@ const [copiedLink, setCopiedLink] = useState(
                     <p/>
                     <Button variant="contained" size="large" color="secondary" onClick={setCopiedLinkedIn}>Copy to Clipboard</Button>
                     {/* <Button variant="contained" size="large" color="secondary" onClick={setCopiedLinkedIn, handleClickLinkedIn}>Copy to Clipboard</Button> */}
-
-                    <Button onclick={testFunction}>Kirk and Spock</Button>
 
             </div>
             </Col>
