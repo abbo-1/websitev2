@@ -53,6 +53,8 @@ function Contact() {
 
     // }
 
+    const [count, setCount] = useState(null);
+
     const [isCopiedGithub, setCopiedGithub] = useClipboard("https://github.com/abbo-1");
 
     useEffect(() => {
@@ -93,9 +95,9 @@ function Contact() {
       const classes = useStyles();
       
       const [openGithub, setOpenGithub] = useState(false);
-      const handleClickGithub = () => {
-        setOpenGithub(true);
-      };
+    //   const handleClickGithub = () => {
+    //     setOpenGithub(true);
+    //   };
       const handleCloseGithub = (event, reason) => {
         if (reason === 'clickaway') {
           return;
@@ -105,9 +107,9 @@ function Contact() {
 
     
       const [openLinkedIn, setopenLinkedIn] = useState(false);
-      const handleClickLinkedIn = () => {
-      setopenLinkedIn(true);
-      };
+    //   const handleClickLinkedIn = () => {
+    //   setopenLinkedIn(true);
+    //   };
       const handleCloseLinkedIn = (event, reason) => {
           if (reason === 'clickaway') {
           return;
@@ -116,9 +118,9 @@ function Contact() {
     };
 
       const [openEmail, setOpenEmail] = useState(false);
-      const handleClickEmail = () => {
-        setOpenEmail(true);
-      };
+    //   const handleClickEmail = () => {
+    //     setOpenEmail(true);
+    //   };
       const handleCloseEmail = (event, reason) => {
         if (reason === 'clickaway') {
           return;
@@ -167,6 +169,9 @@ function Contact() {
                     <p/>
                     <Button variant="contained" size="large" color="secondary" onClick={setCopiedLinkedIn}>Copy to Clipboard</Button>
                     {/* <Button variant="contained" size="large" color="secondary" onClick={setCopiedLinkedIn, handleClickLinkedIn}>Copy to Clipboard</Button> */}
+
+                    <h1>{count}</h1>
+			        <button onClick={() => setCount(count + 1)}>Click to Increment</button>
 
             </div>
             </Col>
