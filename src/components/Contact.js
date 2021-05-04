@@ -12,12 +12,7 @@ import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
 import { makeStyles } from '@material-ui/core/styles';
 
-
 import useClipboard from "react-use-clipboard";
-
-// const linkedInClick = () => {
-//     window.open("https://www.linkedin.com/in/kevin-abbott-bb23268b", "_blank",)
-// }
 
 const theme = createMuiTheme({
     palette: {
@@ -43,12 +38,11 @@ function Contact() {
 //     console.log("Effect was run");
 // });
 
-const [copiedLink, setCopiedLink] = useState(
-    {id: 1, copyGithub: useClipboard("https://github.com/abbo-1")},
-    {id: 2, copyEmail: useClipboard("abbott.kevinj@gmail.com")},
-    {id: 3, copyLinkedIn: useClipboard("https://github.com/abbo-1")}
-
-)
+// const [copiedLink, setCopiedLink] = useState(
+//     {id: 1, copyGithub: useClipboard("https://github.com/abbo-1")},
+//     {id: 2, copyEmail: useClipboard("abbott.kevinj@gmail.com")},
+//     {id: 3, copyLinkedIn: useClipboard("https://github.com/abbo-1")}
+// )
 
 //     const [copiedLink, setCopiedLink] = useState(null)
 
@@ -132,13 +126,10 @@ const [copiedLink, setCopiedLink] = useState(
         setOpenEmail(false);
       };
       
+      
 
     return (
         <Container className="background3">
-        <Button onclick={testFunction}>Jim and Pam</Button>
-        <Button onclick={testFunction}>Test 1</Button>
-        <Button onclick={testFunction}>Test 2</Button>
-        <Button onclick={testFunction}>test 3</Button>
         <Row>
         <ThemeProvider theme={theme}>
             <Col xs={12} md={4}>
