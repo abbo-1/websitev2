@@ -55,6 +55,9 @@ function Contact() {
 
     const [count, setCount] = useState(null);
 
+    const [link, setLink] = useState(null);
+
+
     const [isCopiedGithub, setCopiedGithub] = useClipboard("https://github.com/abbo-1");
 
     useEffect(() => {
