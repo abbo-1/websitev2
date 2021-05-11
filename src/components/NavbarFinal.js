@@ -1,12 +1,20 @@
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import Modal from '@material-ui/core/Modal';
+import Modal from 'react-bootstrap/Modal'
+import { Button} from 'react-bootstrap';
+import {useState} from "react"
 
 import logo from '../images/nameSmallLogo.png'
 
 import PropTypes from 'prop-types'
 
-function NavbarFinal( {openThingsMade} ) {
+function NavbarFinal() {
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
     return (
 
 <Navbar sticky="top" bg="dark" variant="dark" id="NavbarFinal">
@@ -20,10 +28,20 @@ function NavbarFinal( {openThingsMade} ) {
   />{' '}
 </Navbar.Brand>
 <Nav className="ml-auto" >
-<Nav.Link className="nav-link" href="#features" >Things I Made</Nav.Link>
+<Nav.Link className="nav-link" href="#features" onClick={handleShow}>Things I Made</Nav.Link>
 <p>.</p>
 <Nav.Link href="#pricing">Background</Nav.Link>
 </Nav>
+
+
+
+<Modal show={show} onHide={handleClose}>
+"Hello"
+<Button variant="secondary" onClick={handleClose}>
+            Close
+</Button>
+</Modal>
+
 </Navbar>
 
 
