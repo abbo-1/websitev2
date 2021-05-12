@@ -5,6 +5,7 @@ import { Button} from 'react-bootstrap';
 import {useState} from "react"
 
 import logo from '../images/nameSmallLogo.png'
+import Background from './Background.js'
 
 import PropTypes from 'prop-types'
 
@@ -40,6 +41,7 @@ function NavbarFinal() {
 <Button variant="secondary" onClick={handleClose}>
             Close
 </Button>
+<Background/>
 </Modal>
 
 </Navbar>
