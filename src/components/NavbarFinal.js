@@ -29,15 +29,18 @@ function NavbarFinal() {
   />{' '}
 </Navbar.Brand>
 <Nav className="ml-auto" >
-<Nav.Link className="nav-link" href="#features" onClick={handleShow}>Things I Made</Nav.Link>
+<Nav.Link className="nav-link" href="#features">Things I Made</Nav.Link>
 <p>.</p>
-<Nav.Link href="#pricing">Background</Nav.Link>
+<Nav.Link href="#pricing" onClick={handleShow}>Background</Nav.Link>
 </Nav>
 
 
 
-<Modal show={show} onHide={handleClose}>
-"Hello"
+<Modal 
+  show={show} 
+  onHide={handleClose}
+  dialogClassName="main-modal"
+  >
 <Button variant="secondary" onClick={handleClose}>
             Close
 </Button>
