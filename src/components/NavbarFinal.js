@@ -41,9 +41,7 @@ function NavbarFinal() {
   onHide={handleClose}
   dialogClassName="main-modal"
   >
-<Button variant="secondary" onClick={handleClose}>
-            Close
-</Button>
+<Button variant="secondary" onClick={handleClose}>X</Button>
 <Background/>
 </Modal>
 
