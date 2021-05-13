@@ -11,10 +11,14 @@ import PropTypes from 'prop-types'
 
 function NavbarFinal() {
 
-  const [show, setShow] = useState(false);
+  const [showBackground, setShowBackground] = useState(false);
+  const handleCloseBackground = () => setShowBackground(false);
+  const handleShowBackground = () => setShowBackground(true);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const [showPortfolio, setShowPortfolio] = useState(false);
+  const handleClosePortfolio = () => setShowPortfolio(false);
+  const handleShowPortfolio = () => setShowPortfolio(true);
+
 
     return (
 
@@ -29,21 +33,31 @@ function NavbarFinal() {
   />{' '}
 </Navbar.Brand>
 <Nav className="ml-auto" >
-<Nav.Link className="nav-link">Things I Made</Nav.Link>
+<Nav.Link  onClick={handleShowPortfolio}>Things I Made</Nav.Link>
 <p>.</p>
-<Nav.Link onClick={handleShow}>Background</Nav.Link>
+<Nav.Link onClick={handleShowBackground}>Background</Nav.Link>
 </Nav>
 
 
 
 <Modal 
-  show={show} 
-  onHide={handleClose}
+  show={showBackground} 
+  onHide={handleCloseBackground}
   dialogClassName="main-modal"
   >
 {/* <Button variant="outline-dark" onClick={handleClose}>Close</Button> */}
 <Background/>
 </Modal>
+
+<Modal 
+  show={showPortfolio} 
+  onHide={handleClosePortfolio}
+  dialogClassName="main-modal"
+  >
+{/* <Button variant="outline-dark" onClick={handleClose}>Close</Button> */}
+Hello Modal
+</Modal>
+
 
 </Navbar>
 
