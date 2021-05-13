@@ -29,9 +29,9 @@ function NavbarFinal() {
   />{' '}
 </Navbar.Brand>
 <Nav className="ml-auto" >
-<Nav.Link className="nav-link" href="#features">Things I Made</Nav.Link>
+<Nav.Link className="nav-link">Things I Made</Nav.Link>
 <p>.</p>
-<Nav.Link href="#pricing" onClick={handleShow}>Background</Nav.Link>
+<Nav.Link onClick={handleShow}>Background</Nav.Link>
 </Nav>
 
 
@@ -41,7 +41,7 @@ function NavbarFinal() {
   onHide={handleClose}
   dialogClassName="main-modal"
   >
-<Button variant="secondary" onClick={handleClose}>X</Button>
+{/* <Button variant="outline-dark" onClick={handleClose}>Close</Button> */}
 <Background/>
 </Modal>
 

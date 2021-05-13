@@ -1,4 +1,4 @@
-import { Row, Col, Container} from "react-bootstrap";
+import { Row, Col, Container, Button } from "react-bootstrap";
 
 import twoThouOne from '../images/history/2001.png'
 import twoThouFive from '../images/history/2005.png'
@@ -13,17 +13,17 @@ import twoThouEight from '../images/history/2008.png'
 function Background() {
 
       return (
-        <Container className="background3">
+        <Container>
         <Row>
-            <div class="title aboutInfoTitle">
-				<h2>My Background</h2>
-				<h4>How I Got Here</h4>
+            <div class="aboutInfoTitle">
+				<h2>How I Got Here</h2>
             </div>
+            <Button variant="outline-dark" >Test</Button>
         </Row>
         <Row>
         <Col xs={12} md={6}>
-            <div class="col-md-6 align-self-center">
-				<p class="aboutInfo">My passion for technology was born while watching my older brother build and fix computers. With his guidance, I built my first PC in 7th grade. Though my primary motivation was the ability to play games like Starcraft, Max Payne, Unreal Tournament, and Fallout 2 - it ended up being the foundation for a life long passion for technology.</p>
+            <div class="col-md-6">
+				<p class="aboutInfo centerThis">My passion for technology was born while watching my older brother build and fix computers. With his guidance, I built my first PC in 7th grade. Though my primary motivation was the ability to play games like Starcraft, Max Payne, Unreal Tournament, and Fallout 2 - it ended up being the foundation for a life long passion for technology.</p>
 		    </div>
         </Col>
         <Col xs={12} md={6}>
@@ -43,7 +43,7 @@ function Background() {
 		    </div>
         </Col>
         <Col xs={12} md={6}>
-        <div class="col-md-6 align-self-center">
+        <div class="col-md-6">
 				<p class="aboutInfo">PC gaming opened the door to technology, but once I went through it there was no turning back. In high school I tested for my A+ certification and enrolled in networking classes as electives. I also got my first taste of web development, learning basic HTML and CSS.</p>
 		</div>
         </Col>
