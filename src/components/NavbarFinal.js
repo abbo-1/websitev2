@@ -34,9 +34,9 @@ function NavbarFinal() {
   />{' '}
 </Navbar.Brand>
 <Nav className="ml-auto" >
-<Nav.Link  onClick={handleShowPortfolio}>Things I Made</Nav.Link>
-<p>.</p>
 <Nav.Link onClick={handleShowBackground}>Background</Nav.Link>
+<p>.</p>
+<Nav.Link  onClick={handleShowPortfolio}>Things I've Worked On</Nav.Link>
 </Nav>
 
 

@@ -53,7 +53,7 @@ function Contact() {
 
     // }
 
-    const [count, setCount] = useState(null);
+    // const [count, setCount] = useState(null);
 
     const [link, setLink] = useState(null);
 
@@ -173,8 +173,8 @@ function Contact() {
                     <Button variant="contained" size="large" color="secondary" onClick={setCopiedLinkedIn}>Copy to Clipboard</Button>
                     {/* <Button variant="contained" size="large" color="secondary" onClick={setCopiedLinkedIn, handleClickLinkedIn}>Copy to Clipboard</Button> */}
 
-                    <h1>{count}</h1>
-			        <button onClick={() => setCount(count + 1)}>Click to Increment</button>
+                    {/* <h1>{count}</h1> */}
+			        {/* <button onClick={() => setCount(count + 1)}>Click to Increment</button> */}
 
             </div>
             </Col>
