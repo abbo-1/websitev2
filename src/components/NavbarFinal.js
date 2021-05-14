@@ -6,6 +6,7 @@ import {useState} from "react"
 
 import logo from '../images/nameSmallLogo.png'
 import Background from './Background.js'
+import Portfolio from './Portfolio.js'
 
 import PropTypes from 'prop-types'
 
@@ -55,7 +56,7 @@ function NavbarFinal() {
   dialogClassName="main-modal"
   >
 {/* <Button variant="outline-dark" onClick={handleClose}>Close</Button> */}
-Hello Modal
+<Portfolio/>
 </Modal>
 
 
