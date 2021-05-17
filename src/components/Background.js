@@ -1,4 +1,5 @@
 import { Row, Col, Container, Button } from "react-bootstrap";
+import Divider from '@material-ui/core/Divider';
 
 import twoThouOne from '../images/history/2001.png'
 import twoThouFive from '../images/history/2005.png'
@@ -34,6 +35,7 @@ function Background() {
 				</div>
         </Col>
         </Row>
+        <Divider class="divider" variant="middle"/>
         <Row>
         <Col xs={12} md={6}>
         <img class="img-fluid rounded" src={twoThouFive} alt="" />
@@ -48,6 +50,7 @@ function Background() {
 		</div>
         </Col>
         </Row>
+        <Divider class="divider" variant="middle"/>
         <Row>
         <Col xs={12} md={6}>
             <div class="col-md-6 align-self-center">
@@ -63,6 +66,7 @@ function Background() {
 				</div>
         </Col>
         </Row>
+        <Divider class="divider" variant="middle"/>
         <Row>
         <p class="aboutInfo">Obviously that's an incredibly truncated version of my life. In the decade+ that has elapsed- I went to college, got a 'just-to-get-by' job, married, adopted a dog, and sought distraction from the existential terror and dred that comes from our fleeting mortal existance. Last year, I decided to turn my hobby into a career and commited myself to learning everything I can about web development.</p>
         </Row>
