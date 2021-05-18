@@ -7,9 +7,9 @@ return (
 
     <div>
 
-        <p>test 2</p>
+        <p>TESTt</p>
         <Divider class="divider" variant="middle"/>
-        <p>test</p>
+        <p>test2</p>
 
     </div>
     )

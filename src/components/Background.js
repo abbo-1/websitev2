@@ -27,7 +27,7 @@ function Background() {
         </Row>
         <Row>
         <Col xs={12} md={6}>
-            <div>
+        <div class= "centerThis">
             <div class="yearTitle">
                 2001
             </div>
@@ -41,33 +41,32 @@ function Background() {
         </Col>
         <Col xs={12} md={6}>
             <img class="img-fluid rounded" src={twoThouOne} alt="" />
-				<div>
-				<p class="turnItWhite">With my first computer.</p>
-				</div>
+			<p class="turnItWhite">
+                With my first computer
+            </p>
         </Col>
         </Row>
         <Divider class="divider" variant="middle"/>
         <Row>
         <Col xs={12} md={6}>
         <img class="img-fluid rounded" src={twoThouFive} alt="" />
-			<div>
             <p class="turnItWhite">
-                Me (left) and my brother replacing a network card. 
+                Me (left) and my brother replacing a network card
             </p>
-		    </div>
         </Col>
         <Col xs={12} md={6}>
-        <div>
+        <div class= "centerThis">
         <div class="yearTitle">
-                2005
-            </div>
-				<p class="aboutInfo">PC gaming opened the door to technology, but once I went through it there was no turning back. In high school I tested for my A+ certification and enrolled in networking classes as electives. I also got my first taste of web development, learning basic HTML and CSS.</p>
+            2005
+        </div>
+			<p class="aboutInfo">PC gaming opened the door to technology, but once I went through it there was no turning back. In high school I tested for my A+ certification and enrolled in networking classes as electives. I also got my first taste of web development, learning basic HTML and CSS.</p>
 		</div>
         </Col>
         </Row>
         <Divider class="divider" variant="middle"/>
         <Row>
         <Col xs={12} md={6}>
+        <div class= "centerThis">
             <div class="yearTitle">
                 2008
             </div>
@@ -77,23 +76,26 @@ function Background() {
                 <p class="break" />
                 Eventually I earned my Bachelor's degree at University of Houston Downtown, where I graduated with a 4.0.</p>
 		    </div>
+        </div>
         </Col>
         <Col xs={12} md={6}>
             <img class="img-fluid rounded" src={twoThouEight} alt="" />
-				<div>
                 <p class="turnItWhite">					
                 Running the lab
                 </p>
-				</div>
         </Col>
         </Row>
         <Divider class="divider" variant="middle"/>
         <Row>
+        <div class= "centerThis">
         <p class="aboutInfo">In the decade+ that has elapsed- I got a 'just-to-get-by' job, got married, adopted a rescue dog,
         {/* sought distraction from the existential terror and dred that comes from our fleeting mortal existance ,  */} and moved into my first house.
         <p class="break" />
         <p class="break" />
         Last year, I decided to commit myself to turning this lifelong hobby and interest into a career. I invested my spare time in learning to code using the wealth of online resources and enrolled myself a coding program where I was able to learn from industry veterans.</p>
+        </div>
+        <p class="break" />
+        <p class="break" />
         </Row>
         </Container>
       )
