@@ -1,9 +1,9 @@
 import { Row, Col, Container, Button } from "react-bootstrap";
 import Divider from '@material-ui/core/Divider';
 
-import twoThouOne from '../images/history/2001.png'
-import twoThouFive from '../images/history/2005.png'
-import twoThouEight from '../images/history/2008.png'
+import twoThouOne from '../images/history/2001-3.png'
+import twoThouFive from '../images/history/2005-2.png'
+import twoThouEight from '../images/history/2008-2.png'
 
 {/* <Container className="background3">
 <Row>
@@ -16,10 +16,14 @@ function Background() {
       return (
         <Container>
         <Row>
+        <Col xs={11} md={10}>
             <div class="aboutInfoTitle">
 				<h2>How I Got Here</h2>
             </div>
-            <Button variant="outline-dark" >Test</Button>
+        </Col>
+        <Col xs={1} md={2}>
+            <Button id="xBtn" variant="outline-dark" >CLOSE</Button>
+        </Col>
         </Row>
         <Row>
         <Col xs={12} md={6}>
@@ -62,7 +66,7 @@ function Background() {
 				<div>
                 <h2>2008</h2>
 				<p>									
-                Running the lab (with terrible posture)</p>
+                Running the lab</p>
 				</div>
         </Col>
         </Row>
