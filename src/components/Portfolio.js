@@ -16,6 +16,11 @@ return (
             <Button id="xBtn" variant="outline-dark" >CLOSE</Button>
         </Col>
         </Row>
+        <Row>
+        <div>
+			<p class="aboutInfo">Here are a few of the projects i've worked on.</p>
+		</div>
+        </Row>
 
 
 

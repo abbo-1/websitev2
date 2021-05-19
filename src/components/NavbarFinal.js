@@ -53,7 +53,7 @@ function NavbarFinal() {
 <Modal 
   show={showPortfolio} 
   onHide={handleClosePortfolio}
-  dialogClassName="main-modal"
+  dialogClassName="main-modal2"
   >
 {/* <Button variant="outline-dark" onClick={handleClose}>Close</Button> */}
 <Portfolio/>
