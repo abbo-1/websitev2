@@ -21,11 +21,13 @@ return (
 			<p class="aboutInfo">Here are a few of the projects i've worked on.</p>
 		</div>
         </Row>
-
-
-
         <Divider class="divider" variant="middle"/>
-      test
+        <Row>
+        <div class="yearTitle">
+    This Website
+        </div>
+        <p class="aboutInfo">I designed this website- it's not a template! I used React, React-bootstrap, Material-ui, and many other self-designed. The original iteration of this website was much simple and made in pure javascript.</p>
+        </Row>
         </Container>
 
     )
