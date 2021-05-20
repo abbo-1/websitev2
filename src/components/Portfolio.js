@@ -1,6 +1,8 @@
 import Divider from '@material-ui/core/Divider';
 import { Row, Col, Container, Button } from "react-bootstrap";
 
+import ThisPage from "../images/portfolio/thiswebsite.png"
+
 function Portfolio() {
 
 
@@ -26,8 +28,20 @@ return (
         <div class="yearTitle">
     This Website
         </div>
-        <p class="aboutInfo">I designed this website- it's not a template! I used React, React-bootstrap, Material-ui, and many other self-designed. The original iteration of this website was much simple and made in pure javascript.</p>
+        <Col xs={12} md={6}>
+        <p class="aboutInfo">I designed this website- it's not a template! I used React, React-bootstrap, Material-ui, and many other self-designed elements. The original iteration of this website was much simpler as it was made in pure javascript. I also wanted an excuse to practice hooks. My goal was to create something simple, clean, and intuitive. I'm happy with how it's turned out- particularly the buttons on the main page that will copy my related web addresses directly to the clipboard and give an alert.</p>
+        </Col>
+        <Col xs={12} md={6}>
+        <img src={ThisPage} alt="This Website" />
+        <Button size="large" class="portfolioBtn" href="https://www.kevinjabbott.com" target="_blank">LINK</Button>
+        <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/websitev2" target="_blank">CODE</Button>
+        </Col>
         </Row>
+
+        <Divider class="divider" variant="middle"/>
+
+
+
         </Container>
 
     )
