@@ -6,6 +6,10 @@ import FamPage from "../images/portfolio/familyweb.png"
 import TitanicExp from "../images/portfolio/titanicconstruction.png"
 import TastingBoard from "../images/portfolio/tastingBoard1.png"
 import TastingBoardSite from "../images/portfolio/tastingBoardSite.gif"
+import LyricGenie from "../images/portfolio/lyricGenie.png"
+import LyricGenieSite from "../images/portfolio/lyriceGenieSite.gif"
+
+
 
 function Portfolio() {
 
@@ -112,37 +116,54 @@ return (
         This is by far the most ambitious project i've attempted. If it ends up as i've envisioned it, it will utilize React and Redux in order to display a birds-eye view of the ship's deck where the user can interact with the lifeboats to really understand what on the cold April night in 1912. I will update this as I make progress.
         </p>
         </Col>
-
         </Row>
         
         <Divider class="divider" variant="middle"/>
         
         <Row>
+
         <Col xs={12} md={12}>
         <div class="portfolioTitle">
         Collaborations
         </div>
         </Col>
+
         <Col xs={12} md={6}>
-        <img src={TitanicExp} class="portfolioPic" alt="A screenshot of a family history webpage" />
-        <Button size="large" class="portfolioBtn" target="_blank" disabled>LINK</Button>
-        <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
+        <img src={TastingBoard} class="portfolioPic" alt="Screenshot of Tasting Board" />
         </Col>
+
         <Col xs={12} md={6}>
-        <img src={TitanicExp} class="portfolioPic" alt="A screenshot of a family history webpage" />
-        <Button size="large" class="portfolioBtn" target="_blank" disabled>LINK</Button>
-        <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
+        <img src={LyricGenie} class="portfolioPic" alt="Screenshot of Tasting Board" />
         </Col>
+
+
         <Row>
+
         <Col xs={12} md={6}>
-        <img src={TastingBoard} class="portfolioPic" alt="A screenshot of a family history webpage" />
-        <img src={TastingBoardSite} class="portfolioPic" alt="A screenshot of a family history webpage" />
-        <p class="aboutInfo">These are two collaborations I worked on- the first is 
-        </p>
+        <img src={TastingBoardSite} class="portfolioPic" alt="Gif of Tasting Board Functionality" />
+        <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
         </Col>
-        </Row>
+
+        <Col xs={12} md={6}>
+        <img src={LyricGenieSite} class="portfolioPic" alt="Gif of Tasting Board Functionality" />
+        <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
+        </Col>
 
         </Row>
+
+
+
+
+{/* 
+        <img src={TastingBoardSite} class="portfolioPic" alt="Gif of Tasting Board Functionality" />
+        <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
+        <p class="aboutInfo">This is an </p>
+        </Col>
+        <img src={LyricGenieSite} class="portfolioPic" alt="Gif of Tasting Board Functionality" />
+        <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
+        <p class="aboutInfo">This is an </p> */}
+        {/* </Col>
+        </Row> */}
 
         <Divider class="divider" variant="middle"/>
 
