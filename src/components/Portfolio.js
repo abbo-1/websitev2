@@ -4,6 +4,8 @@ import { Row, Col, Container, Button } from "react-bootstrap";
 import ThisPage from "../images/portfolio/thiswebsite.png"
 import FamPage from "../images/portfolio/familyweb.png"
 import TitanicExp from "../images/portfolio/titanicconstruction.png"
+import TastingBoard from "../images/portfolio/tastingBoard1.png"
+import TastingBoardSite from "../images/portfolio/tastingBoardSite.gif"
 
 function Portfolio() {
 
@@ -133,7 +135,9 @@ return (
         </Col>
         <Row>
         <Col xs={12} md={6}>
-        <p class="aboutInfo">These are two 
+        <img src={TastingBoard} class="portfolioPic" alt="A screenshot of a family history webpage" />
+        <img src={TastingBoardSite} class="portfolioPic" alt="A screenshot of a family history webpage" />
+        <p class="aboutInfo">These are two collaborations I worked on- the first is 
         </p>
         </Col>
         </Row>
