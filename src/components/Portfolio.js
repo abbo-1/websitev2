@@ -136,6 +136,10 @@ return (
         <img src={LyricGenie} class="portfolioPic" alt="Screenshot of Tasting Board" />
         </Col>
 
+        </Row>
+
+        <p class="break" />
+        <p class="break" />
 
         <Row>
 
