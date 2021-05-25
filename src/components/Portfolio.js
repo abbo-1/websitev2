@@ -8,6 +8,12 @@ import TastingBoard from "../images/portfolio/tastingBoard1.png"
 import TastingBoardSite from "../images/portfolio/tastingBoardSite.gif"
 import LyricGenie from "../images/portfolio/lyricGenie.png"
 import LyricGenieSite from "../images/portfolio/lyriceGenieSite.gif"
+import RichardsonLogo from "../images/portfolio/richardsonLogo3.png"
+import TastingBoard from "../images/portfolio/tbLogo2.png"
+import WeibeBrew from "../images/portfolio/wiebeBrewingLogo2.png"
+import SleepingCat from "../images/portfolio/sleepingCatLogo.png"
+import TedLasso from "../images/portfolio/tedLasso.png"
+import Titanic from "../images/portfolio/rmsTitanic.png"
 
 
 
@@ -177,6 +183,17 @@ return (
         Designs
         </div>
         </Col>
+        <Row>
+        <Col xs={12} md={6}>
+        <img src={TedLasso} class="portfolioPic" alt="Gif of Tasting Board Functionality" />
+        <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">LINK</Button>
+        </Col>
+
+        <Col xs={12} md={6}>
+        <img src={Titanic} class="portfolioPic" alt="Gif of Tasting Board Functionality" />
+        <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">LINK</Button>
+        </Col>
+        </Row>
         </Row>
 
         </Container>
