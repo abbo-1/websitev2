@@ -9,12 +9,11 @@ import TastingBoardSite from "../images/portfolio/tastingBoardSite.gif"
 import LyricGenie from "../images/portfolio/lyricGenie.png"
 import LyricGenieSite from "../images/portfolio/lyriceGenieSite.gif"
 import RichardsonLogo from "../images/portfolio/richardsonLogo3.png"
-import TastingBoard from "../images/portfolio/tbLogo2.png"
+import TastingBoardLogo from "../images/portfolio/tbLogo2.png"
 import WeibeBrew from "../images/portfolio/wiebeBrewingLogo2.png"
 import SleepingCat from "../images/portfolio/sleepingCatLogo.png"
 import TedLasso from "../images/portfolio/tedLasso.png"
 import Titanic from "../images/portfolio/rmsTitanic.png"
-
 
 
 function Portfolio() {
@@ -158,6 +157,23 @@ return (
         <img src={LyricGenieSite} class="portfolioPic" alt="Gif of Tasting Board Functionality" />
         <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
         </Col>
+
+        <Col xs={12} md={6}>
+<img src={SleepingCat} class="portfolioPic" alt="Screenshot of Tasting Board" />
+</Col>
+
+<Col xs={12} md={6}>
+<img src={WeibeBrew} class="portfolioPic" alt="Screenshot of Tasting Board" />
+</Col>
+
+<Col xs={12} md={6}>
+<img src={TastingBoardLogo} class="portfolioPic" alt="Screenshot of Tasting Board" />
+</Col>
+
+<Col xs={12} md={6}>
+<img src={RichardsonLogo} class="portfolioPic" alt="Screenshot of Tasting Board" />
+</Col>
+
 
         </Row>
 
