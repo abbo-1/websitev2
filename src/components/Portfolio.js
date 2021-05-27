@@ -14,7 +14,8 @@ import WeibeBrew from "../images/portfolio/wiebeBrewingLogo2.png"
 import SleepingCat from "../images/portfolio/sleepingCatLogo.png"
 import TedLasso from "../images/portfolio/tedLasso.png"
 import Titanic from "../images/portfolio/rmsTitanic.png"
-
+import GunslingersLogo from "../images/portfolio/gunslingersLogo2.png"
+import Weibebuilding from "../images/portfolio/weibebuilding.png"
 
 function Portfolio() {
 
@@ -158,38 +159,7 @@ return (
         <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
         </Col>
 
-        <Col xs={12} md={6}>
-<img src={SleepingCat} class="portfolioPic" alt="Screenshot of Tasting Board" />
-</Col>
-
-<Col xs={12} md={6}>
-<img src={WeibeBrew} class="portfolioPic" alt="Screenshot of Tasting Board" />
-</Col>
-
-<Col xs={12} md={6}>
-<img src={TastingBoardLogo} class="portfolioPic" alt="Screenshot of Tasting Board" />
-</Col>
-
-<Col xs={12} md={6}>
-<img src={RichardsonLogo} class="portfolioPic" alt="Screenshot of Tasting Board" />
-</Col>
-
-
         </Row>
-
-
-
-
-{/* 
-        <img src={TastingBoardSite} class="portfolioPic" alt="Gif of Tasting Board Functionality" />
-        <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
-        <p class="aboutInfo">This is an </p>
-        </Col>
-        <img src={LyricGenieSite} class="portfolioPic" alt="Gif of Tasting Board Functionality" />
-        <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
-        <p class="aboutInfo">This is an </p> */}
-        {/* </Col>
-        </Row> */}
 
         <Divider class="divider" variant="middle"/>
 
@@ -210,6 +180,32 @@ return (
         <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">LINK</Button>
         </Col>
         </Row>
+
+        <Col xs={12} md={6}>
+<img src={SleepingCat} class="portfolioPic" alt="Screenshot of Tasting Board" />
+</Col>
+
+<Col xs={12} md={6}>
+<img src={WeibeBrew} class="portfolioPic" alt="Screenshot of Tasting Board" />
+</Col>
+
+<Col xs={12} md={6}>
+<img src={TastingBoardLogo} class="portfolioPic" alt="Screenshot of Tasting Board" />
+</Col>
+
+<Col xs={12} md={6}>
+<img src={RichardsonLogo} class="portfolioPic" alt="Screenshot of Tasting Board" />
+</Col>
+
+<Col xs={12} md={6}>
+<img src={GunslingersLogo} class="portfolioPic" alt="Screenshot of Tasting Board" />
+</Col>
+
+<Col xs={12} md={6}>
+<img src={Weibebuilding} class="portfolioPic" alt="Screenshot of Tasting Board" />
+</Col>
+
+
         </Row>
 
         </Container>
