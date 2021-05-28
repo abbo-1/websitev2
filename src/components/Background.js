@@ -18,9 +18,9 @@ function Background() {
         <Row>
         <Col xs={11} md={10}>
             <div class="aboutInfoTitle">
-				<h2>How I Got Here</h2>
+				<h2>My Background</h2>
             </div>
-        </Col>
+         </Col>
         <Col xs={1} md={2}>
             <Button id="xBtn" variant="outline-dark" >CLOSE</Button>
         </Col>

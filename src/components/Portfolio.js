@@ -33,9 +33,11 @@ return (
         </Col>
         </Row>
         <Row>
+        <Col xs={12}>
         <div>
 			<p class="aboutInfo">Here are a few of the projects i've worked on.</p>
 		</div>
+        </Col>
         </Row>
 
         <Divider class="divider" variant="middle"/>
@@ -48,6 +50,8 @@ return (
         </Col>
         <Col xs={12} md={6}>
         <img src={ThisPage} class="portfolioPic" alt="A screenshot of the webpage you're on right now! Very Inception, I know." />
+        <p class="break" />
+        <p class="break" />
         <Button size="large" class="portfolioBtn" href="https://www.kevinjabbott.com" target="_blank">LINK</Button>
         <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/websitev2" target="_blank">CODE</Button>
         </Col>
@@ -90,6 +94,8 @@ return (
         </Col>
         <Col xs={12} md={6}>
         <img src={TitanicExp} class="portfolioPic" alt="Screenshot of Titanic Lifeboat Website" />
+        <p class="break" />
+        <p class="break" />
         <Button size="large" class="portfolioBtn" target="_blank" disabled>LINK</Button>
         <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
         </Col>
@@ -151,11 +157,15 @@ return (
 
         <Col xs={12} md={6}>
         <img src={TastingBoardSite} class="portfolioPic" alt="Gif of Tasting Board Functionality" />
+        <p class="break" />
+        <p class="break" />
         <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
         </Col>
 
         <Col xs={12} md={6}>
         <img src={LyricGenieSite} class="portfolioPic" alt="Gif of Lyric Genie Website" />
+        <p class="break" />
+        <p class="break" />
         <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
         </Col>
 
@@ -169,15 +179,36 @@ return (
         Designs
         </div>
         </Col>
+
+        <Row>
+        <Col xs={12}>
+        <p class="aboutInfo">I've also designed/done the CSS for a handful of subreddits. Please checkout /r/RMS_Titanic and /r/TedLasso on the old version of reddit to see.</p>
+        <p class="break" />
+        <p class="break" />
+        </Col>
+        </Row>
+
         <Row>
         <Col xs={12} md={6}>
         <img src={TedLasso} class="portfolioPic" alt="Screenshot of Ted Lasso Reddit" />
+        <p class="break" />
+        <p class="break" />
         <Button size="large" class="portfolioBtn" href="https://old.reddit.com/r/TedLasso/" target="_blank">LINK</Button>
         </Col>
 
         <Col xs={12} md={6}>
         <img src={Titanic} class="portfolioPic" alt="Screenshot of RMS_Titanic Reddit" />
+        <p class="break" />
+        <p class="break" />
         <Button size="large" class="portfolioBtn" href="https://old.reddit.com/r/rms_titanic/" target="_blank">LINK</Button>
+        <p class="break" />
+        <p class="break" />
+        </Col>
+        </Row>
+
+        <Row>
+        <Col xs={12}>
+        <p class="aboutInfo">One of my side passions is graphic/logo design. Below you'll see some logos i've created for projects i've worked on, small companies, or by request.</p>
         <p class="break" />
         <p class="break" />
         </Col>
