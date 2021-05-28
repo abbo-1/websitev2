@@ -89,7 +89,7 @@ return (
         </div>
         </Col>
         <Col xs={12} md={6}>
-        <img src={TitanicExp} class="portfolioPic" alt="A screenshot of a family history webpage" />
+        <img src={TitanicExp} class="portfolioPic" alt="Screenshot of Titanic Lifeboat Website" />
         <Button size="large" class="portfolioBtn" target="_blank" disabled>LINK</Button>
         <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
         </Col>
@@ -104,14 +104,14 @@ return (
 
         <Divider class="divider" variant="middle"/>
 
-        <Row>
+        {/* <Row>
         <Col xs={12} md={12}>
         <div class="portfolioTitle">
         Titanic: Lifeboat Tracker
         </div>
         </Col>
         <Col xs={12} md={6}>
-        <img src={TitanicExp} class="portfolioPic" alt="A screenshot of a family history webpage" />
+        <img src={TitanicExp} class="portfolioPic" alt="Screenshot of Titanic Lifeboat Website" />
         <Button size="large" class="portfolioBtn" target="_blank" disabled>LINK</Button>
         <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
         </Col>
@@ -124,7 +124,7 @@ return (
         </Col>
         </Row>
         
-        <Divider class="divider" variant="middle"/>
+        <Divider class="divider" variant="middle"/> */}
         
         <Row>
 
@@ -139,7 +139,7 @@ return (
         </Col>
 
         <Col xs={12} md={6}>
-        <img src={LyricGenie} class="portfolioPic" alt="Screenshot of Tasting Board" />
+        <img src={LyricGenie} class="portfolioPic" alt="Gif of Lyric Genie Website" />
         </Col>
 
         </Row>
@@ -155,7 +155,7 @@ return (
         </Col>
 
         <Col xs={12} md={6}>
-        <img src={LyricGenieSite} class="portfolioPic" alt="Gif of Tasting Board Functionality" />
+        <img src={LyricGenieSite} class="portfolioPic" alt="Gif of Lyric Genie Website" />
         <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
         </Col>
 
@@ -171,48 +171,50 @@ return (
         </Col>
         <Row>
         <Col xs={12} md={6}>
-        <img src={TedLasso} class="portfolioPic" alt="Gif of Tasting Board Functionality" />
+        <img src={TedLasso} class="portfolioPic" alt="Screenshot of Ted Lasso Reddit" />
         <Button size="large" class="portfolioBtn" href="https://old.reddit.com/r/TedLasso/" target="_blank">LINK</Button>
         </Col>
 
         <Col xs={12} md={6}>
-        <img src={Titanic} class="portfolioPic" alt="Gif of Tasting Board Functionality" />
+        <img src={Titanic} class="portfolioPic" alt="Screenshot of RMS_Titanic Reddit" />
         <Button size="large" class="portfolioBtn" href="https://old.reddit.com/r/rms_titanic/" target="_blank">LINK</Button>
+        <p class="break" />
+        <p class="break" />
         </Col>
         </Row>
 
         <Col xs={12} md={6}>
-        <img src={SleepingCat} class="portfolioPic" alt="Screenshot of Tasting Board" />
+        <img src={SleepingCat} class="portfolioPic" alt="Sleeping Cat Logo" />
         </Col>
 
         <Col xs={12} md={6}>
-        <img src={WeibeBrew} class="portfolioPic" alt="Screenshot of Tasting Board" />
+        <img src={WeibeBrew} class="portfolioPic" alt="Weibe Brewing Logo" />
+        <p class="break" />
+        <p class="break" />
         </Col>
         
-        <p class="break" />
-        <p class="break" />
 
         <Col xs={12} md={6}>
-        <img src={TastingBoardLogo} class="portfolioPic" alt="Screenshot of Tasting Board" />
+        <img src={TastingBoardLogo} class="portfolioPic" alt="Tasting Board Logo" />
         </Col>
 
         <Col xs={12} md={6}>
-        <img src={RichardsonLogo} class="portfolioPic" alt="Screenshot of Tasting Board" />
-        </Col>
-
+        <img src={RichardsonLogo} class="portfolioPic" alt="Richardson Website Logo" />
         <p class="break" />
         <p class="break" />
+        </Col>
+
 
         <Col xs={12} md={6}>
-        <img src={GunslingersLogo} class="portfolioPic" alt="Screenshot of Tasting Board" />
+        <img src={GunslingersLogo} class="portfolioPic" alt="Gunslingers Logo" />
         </Col>
 
         <Col xs={12} md={6}>
-        <img src={Weibebuilding} class="portfolioPic" alt="Screenshot of Tasting Board" />
+        <img src={Weibebuilding} class="portfolioPic" alt="Weibe Building Logo" />
+        <p class="break" />
+        <p class="break" />
         </Col>
         
-        <p class="break" />
-        <p class="break" />
 
         </Row>
 
