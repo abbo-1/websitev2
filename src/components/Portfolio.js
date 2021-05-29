@@ -216,6 +216,8 @@ return (
 
         <Col xs={12} md={6}>
         <img src={SleepingCat} class="portfolioPic" alt="Sleeping Cat Logo" />
+        <p class="break" />
+        <p class="break" />
         </Col>
 
         <Col xs={12} md={6}>
@@ -227,6 +229,8 @@ return (
 
         <Col xs={12} md={6}>
         <img src={TastingBoardLogo} class="portfolioPic" alt="Tasting Board Logo" />
+        <p class="break" />
+        <p class="break" />
         </Col>
 
         <Col xs={12} md={6}>
@@ -238,6 +242,8 @@ return (
 
         <Col xs={12} md={6}>
         <img src={GunslingersLogo} class="portfolioPic" alt="Gunslingers Logo" />
+        <p class="break" />
+        <p class="break" />
         </Col>
 
         <Col xs={12} md={6}>

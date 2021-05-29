@@ -26,7 +26,7 @@ function Background() {
         </Col>
         </Row>
         <Row>
-        <Col xs={12} md={6}>
+        <Col xs={{span: 12, order: 1 }} md={{ span: 6, order: 1 }}>
         <div class= "centerThis">
             <div class="yearTitle">
                 2001
@@ -39,8 +39,8 @@ function Background() {
                 </p>
 		    </div>
         </Col>
-        <Col xs={12} md={6}>
-            <img class="img-fluid rounded" src={twoThouOne} alt="" />
+        <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 2 }}>
+            <img class="img-fluid rounded topSpace" src={twoThouOne} alt="" />
 			<p class="turnItWhite">
                 With my first computer
             </p>
@@ -48,13 +48,13 @@ function Background() {
         </Row>
         <Divider class="divider" variant="middle"/>
         <Row>
-        <Col xs={12} md={6}>
-        <img class="img-fluid rounded" src={twoThouFive} alt="" />
+        <Col xs={{ span: 12, order: 4 }} md={{ span: 6, order: 3 }}>
+        <img class="img-fluid rounded topSpace" src={twoThouFive} alt="" />
             <p class="turnItWhite">
                 Me (left) and my brother replacing a network card
             </p>
         </Col>
-        <Col xs={12} md={6}>
+        <Col xs={{ span: 12, order: 3 }} md={{ span: 6, order: 4 }}>
         <div class= "centerThis">
         <div class="yearTitle">
             2005
@@ -65,7 +65,7 @@ function Background() {
         </Row>
         <Divider class="divider" variant="middle"/>
         <Row>
-        <Col xs={12} md={6}>
+        <Col xs={{ span: 12, order: 5 }} md={{ span: 6, order: 5 }}>
         <div class= "centerThis">
             <div class="yearTitle">
                 2008
@@ -78,8 +78,8 @@ function Background() {
 		    </div>
         </div>
         </Col>
-        <Col xs={12} md={6}>
-            <img class="img-fluid rounded" src={twoThouEight} alt="" />
+        <Col xs={{ span: 12, order: 6 }} md={{ span: 6, order: 6 }}>
+            <img class="img-fluid rounded topSpace" src={twoThouEight} alt="" />
                 <p class="turnItWhite">					
                 Running the lab
                 </p>
