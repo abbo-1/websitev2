@@ -259,7 +259,7 @@ a.linkButtons:hover {
   padding: 3px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   margin-top: 25px;
   text-align: center;
   width: 80%;
@@ -383,4 +383,8 @@ a.linkButtons:hover {
 
 .topSpace {
   margin-top: 10px;
+}
+
+.makeItWhite {
+  color: white
 }

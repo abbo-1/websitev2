@@ -43,19 +43,19 @@ return (
         <Divider class="divider" variant="middle"/>
 
         <Row>
-        <Col xs={12} md={12}>
+        <Col xs={{ span: 12, order: 1 }} md={{ span: 12, order: 1 }}>
         <div class="portfolioTitle">
         This Website
         </div>
         </Col>
-        <Col xs={12} md={6}>
+        <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 2 }}>
         <img src={ThisPage} class="portfolioPic" alt="A screenshot of the webpage you're on right now! Very Inception, I know." />
         <p class="break" />
         <p class="break" />
         <Button size="large" class="portfolioBtn" href="https://www.kevinjabbott.com" target="_blank">LINK</Button>
         <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/websitev2" target="_blank">CODE</Button>
         </Col>
-        <Col xs={12} md={6}>
+        <Col xs={{ span: 12, order: 3 }} md={{ span: 6, order: 3 }}>
         <p class="aboutInfo">I designed this website- it's not a template! I used React, React-bootstrap, Material-ui, and many other self-designed elements. The original iteration of this website was much simpler as it was made in pure javascript. I also was looking for excuses to practice hooks. 
         <p class="break" />
         <p class="break" />
@@ -66,17 +66,17 @@ return (
         <Divider class="divider" variant="middle"/>
 
         <Row>
-        <Col xs={12} md={12}>
+        <Col xs={{ span: 12, order: 4 }} md={{ span: 12, order: 4 }}>
         <div class="portfolioTitle">
         Family History Website
         </div>
         </Col>
-        <Col xs={12} md={6}>
+        <Col xs={{ span: 12, order: 5 }} md={{ span: 6, order: 5 }}>
         <img src={FamPage} class="portfolioPic" alt="A screenshot of a family history webpage" />
         <Button size="large" class="portfolioBtn" href="https://www.richardsonfamilyhistory.org/" target="_blank">LINK</Button>
         <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/familywebsite2" target="_blank">CODE</Button>
         </Col>
-        <Col xs={12} md={6}>
+        <Col xs={{ span: 12, order: 6 }} md={{ span: 6, order: 6 }}>
         <p class="aboutInfo">This is the first major project I embarked on after I left boot camp. I was hired to create a webpage that would make my client's years of family history research available online for others. I used primarily React, with resources from Material-ui and Semantic-ui- and help from independent projects like react-lightbox.
         <p class="break" />
         <p class="break" />
@@ -87,19 +87,19 @@ return (
         <Divider class="divider" variant="middle"/>
 
         <Row>
-        <Col xs={12} md={12}>
+        <Col xs={{ span: 12, order: 7 }} md={{ span: 12, order: 7 }}>
         <div class="portfolioTitle">
         Titanic: Lifeboat Tracker
         </div>
         </Col>
-        <Col xs={12} md={6}>
+        <Col xs={{ span: 12, order: 8 }} md={{ span: 6, order: 8 }}>
         <img src={TitanicExp} class="portfolioPic" alt="Screenshot of Titanic Lifeboat Website" />
         <p class="break" />
         <p class="break" />
         <Button size="large" class="portfolioBtn" target="_blank" disabled>LINK</Button>
         <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
         </Col>
-        <Col xs={12} md={6}>
+        <Col xs={{ span: 12, order: 9 }} md={{ span: 6, order: 9 }}>
         <p class="aboutInfo">Anyone who knows anything about me knows that i'm an amateur Titanic historian. This app is still under construction- as of mid-2021 it's still in it's nascent stages but I wanted to include it here as a place holder and to share some information about a project i'm currently working on.
         <p class="break" />
         <p class="break" />
@@ -134,39 +134,41 @@ return (
         
         <Row>
 
-        <Col xs={12} md={12}>
+        <Col xs={{ span: 12, order: 10 }} md={{ span: 12, order: 10  }}>
         <div class="portfolioTitle">
         Collaborations
         </div>
         </Col>
 
-        <Col xs={12} md={6}>
+        <Col xs={{ span: 12, order: 11 }} md={{ span: 6, order: 11 }}>
         <img src={TastingBoard} class="portfolioPic" alt="Screenshot of Tasting Board" />
         </Col>
 
-        <Col xs={12} md={6}>
-        <img src={LyricGenie} class="portfolioPic" alt="Gif of Lyric Genie Website" />
-        </Col>
-
-        </Row>
-
-        <p class="break" />
-        <p class="break" />
-
-        <Row>
-
-        <Col xs={12} md={6}>
+        <Col xs={{ span: 12, order: 12 }} md={{ span: 6, order: 12 }}>
         <img src={TastingBoardSite} class="portfolioPic" alt="Gif of Tasting Board Functionality" />
         <p class="break" />
         <p class="break" />
-        <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
+        <Button size="large" class="portfolioBtn" href="https://github.com/SamKlep/tastingBoard" target="_blank">CODE</Button>
         </Col>
 
-        <Col xs={12} md={6}>
+        <Col md={12}>
+        <p class="aboutInfo">Tasting Board was an app that allowed users to log, organize, rate, and comment on different alcoholic beverages they've tried.</p>
+        </Col>
+
+        <p class="break" />
+        <p class="break" />
+
+        <Col xs={{ span: 12, order: 14 }} md={{ span: 6, order: 14 }}>
+        <img src={LyricGenie} class="portfolioPic" alt="Gif of Lyric Genie Website" />
+        </Col>
+
+        <Col xs={{ span: 12, order: 15 }} md={{ span: 6, order: 15 }}>
         <img src={LyricGenieSite} class="portfolioPic" alt="Gif of Lyric Genie Website" />
         <p class="break" />
         <p class="break" />
-        <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
+        <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/lyricGenie" target="_blank">CODE</Button>
+
+
         </Col>
 
         </Row>
@@ -208,7 +210,7 @@ return (
 
         <Row>
         <Col xs={12}>
-        <p class="aboutInfo">One of my side passions is graphic/logo design. Below you'll see some logos i've created for projects i've worked on, small companies, or by request.</p>
+        <p class="aboutInfo">One of my side passions is graphic/logo design. Below you'll see some logos i've created for projects i've worked on, independent companies, or by request.</p>
         <p class="break" />
         <p class="break" />
         </Col>
