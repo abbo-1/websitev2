@@ -25,18 +25,11 @@ return (
         <Row>
         <Col xs={11} md={10}>
             <div class="aboutInfoTitle">
-				<h2>Things I've Made</h2>
+				<h2>Here are a few of the projects i've worked on:</h2>
             </div>
         </Col>
         <Col xs={1} md={2}>
             <Button id="xBtn" variant="outline-dark" >CLOSE</Button>
-        </Col>
-        </Row>
-        <Row>
-        <Col xs={12}>
-        <div>
-			<p class="aboutInfo">Here are a few of the projects i've worked on.</p>
-		</div>
         </Col>
         </Row>
 
@@ -139,8 +132,43 @@ return (
         Collaborations
         </div>
         </Col>
+        </Row>
 
-        <Col xs={{ span: 12, order: 11 }} md={{ span: 6, order: 11 }}>
+        <Row>
+            
+        <Row>
+        <Col xs={{ span: 12, order: 11 }} md={6}>
+        <img src={TastingBoard} class="portfolioPic" alt="Screenshot of Tasting Board" />
+        <p class="break" />
+        <p class="break" />
+        </Col>
+
+        <Col xs={{ span: 12, order: 13 }} md={6}>
+        <img src={LyricGenie} class="portfolioPic" alt="Gif of Lyric Genie Website" />
+        <p class="break" />
+        <p class="break" />
+        </Col>
+
+        <Col xs={{ span: 12, order: 12 }} md={6}>
+        <img src={TastingBoardSite} class="portfolioPic" alt="Gif of Tasting Board Functionality" />
+        <p class="break" />
+        <p class="break" />
+        <Button size="large" class="portfolioBtn" href="https://old.reddit.com/r/TedLasso/" target="_blank">LINK</Button>
+        </Col>
+
+        <Col xs={{ span: 12, order: 14 }} md={6}>
+        <img src={LyricGenieSite} class="portfolioPic" alt="Gif of Lyric Genie Website" />
+        <p class="break" />
+        <p class="break" />
+        <Button size="large" class="portfolioBtn" href="https://old.reddit.com/r/rms_titanic/" target="_blank">LINK</Button>
+        <p class="break" />
+        <p class="break" />
+        </Col>
+        </Row>
+
+        </Row>
+
+                {/* <Col xs={{ span: 12, order: 11 }} md={{ span: 6, order: 11 }}>
         <img src={TastingBoard} class="portfolioPic" alt="Screenshot of Tasting Board" />
         </Col>
 
@@ -167,11 +195,11 @@ return (
         <p class="break" />
         <p class="break" />
         <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/lyricGenie" target="_blank">CODE</Button>
-
-
-        </Col>
-
-        </Row>
+ */}
+{/* 
+        </Col> */}
+{/* 
+        </Row> */}
 
         <Divider class="divider" variant="middle"/>
 
