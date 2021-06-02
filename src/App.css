@@ -388,3 +388,9 @@ a.linkButtons:hover {
 .makeItWhite {
   color: white
 }
+
+.portfolioBtn {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}

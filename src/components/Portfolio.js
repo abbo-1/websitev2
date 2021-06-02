@@ -45,8 +45,16 @@ return (
         <img src={ThisPage} class="portfolioPic" alt="A screenshot of the webpage you're on right now! Very Inception, I know." />
         <p class="break" />
         <p class="break" />
+        <Row>
+        <div class="portfolioBtn">
         <Button size="large" class="portfolioBtn" href="https://www.kevinjabbott.com" target="_blank">LINK</Button>
+        </div>
+        <div class="portfolioBtn">
         <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/websitev2" target="_blank">CODE</Button>
+        </div>
+        </Row>
+        <p class="break" />
+        <p class="break" />
         </Col>
         <Col xs={{ span: 12, order: 3 }} md={{ span: 6, order: 3 }}>
         <p class="aboutInfo">I designed this website- it's not a template! I used React, React-bootstrap, Material-ui, and many other self-designed elements. The original iteration of this website was much simpler as it was made in pure javascript. I also was looking for excuses to practice hooks. 
@@ -66,8 +74,19 @@ return (
         </Col>
         <Col xs={{ span: 12, order: 5 }} md={{ span: 6, order: 5 }}>
         <img src={FamPage} class="portfolioPic" alt="A screenshot of a family history webpage" />
+        <p class="break" />
+        <p class="break" />
+        
+        <Row>
+        <div class="portfolioBtn">
         <Button size="large" class="portfolioBtn" href="https://www.richardsonfamilyhistory.org/" target="_blank">LINK</Button>
+        </div>
+        <div class="portfolioBtn">
         <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/familywebsite2" target="_blank">CODE</Button>
+        </div>
+        </Row>
+        <p class="break" />
+        <p class="break" />
         </Col>
         <Col xs={{ span: 12, order: 6 }} md={{ span: 6, order: 6 }}>
         <p class="aboutInfo">This is the first major project I embarked on after I left boot camp. I was hired to create a webpage that would make my client's years of family history research available online for others. I used primarily React, with resources from Material-ui and Semantic-ui- and help from independent projects like react-lightbox.
@@ -89,8 +108,16 @@ return (
         <img src={TitanicExp} class="portfolioPic" alt="Screenshot of Titanic Lifeboat Website" />
         <p class="break" />
         <p class="break" />
-        <Button size="large" class="portfolioBtn" target="_blank" disabled>LINK</Button>
+        <Row>
+        <div class="portfolioBtn">
+        <Button size="large" target="_blank" disabled>LINK</Button>
+        </div>
+        <div class="portfolioBtn">
         <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/project401" target="_blank">CODE</Button>
+        </div>
+        </Row>
+        <p class="break" />
+        <p class="break" />
         </Col>
         <Col xs={{ span: 12, order: 9 }} md={{ span: 6, order: 9 }}>
         <p class="aboutInfo">Anyone who knows anything about me knows that i'm an amateur Titanic historian. This app is still under construction- as of mid-2021 it's still in it's nascent stages but I wanted to include it here as a place holder and to share some information about a project i'm currently working on.
@@ -133,10 +160,17 @@ return (
         </div>
         </Col>
         </Row>
-
-        <Row>
             
         <Row>
+        <Col md={12}>
+        <p class="aboutInfo">These are two projects I collaborated on- the first was called Lyric Genie. It was a simple app utilzing two APIs. The youtube API and another called MusixMatch. You could type in partial lyrics to a song and the app would pull up a list of possible matches. If you selected one the API would pull up the first result from youtube (ideally a music video).
+        <p class="break" />
+        <p class="break" />
+         Tasting Board was an app that allowed users to log, organize, rate, and comment on different alcoholic beverages they've tried. We used postgres, sequelize, javascript, and even implemented local and google authentication for users to sign in.</p>
+        <p class="break" />
+        <p class="break" />
+        </Col>
+
         <Col xs={{ span: 12, order: 11 }} md={6}>
         <img src={TastingBoard} class="portfolioPic" alt="Screenshot of Tasting Board" />
         <p class="break" />
@@ -153,20 +187,23 @@ return (
         <img src={TastingBoardSite} class="portfolioPic" alt="Gif of Tasting Board Functionality" />
         <p class="break" />
         <p class="break" />
-        <Button size="large" class="portfolioBtn" href="https://old.reddit.com/r/TedLasso/" target="_blank">LINK</Button>
+        <div class="portfolioBtn">
+        <Button size="large" class="portfolioBtn" href="https://github.com/SamKlep/tastingBoard" target="_blank">CODE</Button>
+        </div>
         </Col>
 
         <Col xs={{ span: 12, order: 14 }} md={6}>
         <img src={LyricGenieSite} class="portfolioPic" alt="Gif of Lyric Genie Website" />
         <p class="break" />
         <p class="break" />
-        <Button size="large" class="portfolioBtn" href="https://old.reddit.com/r/rms_titanic/" target="_blank">LINK</Button>
+        <div class="portfolioBtn">
+        <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/lyricGenie" target="_blank">CODE</Button>
+        </div>
         <p class="break" />
         <p class="break" />
         </Col>
         </Row>
 
-        </Row>
 
                 {/* <Col xs={{ span: 12, order: 11 }} md={{ span: 6, order: 11 }}>
         <img src={TastingBoard} class="portfolioPic" alt="Screenshot of Tasting Board" />
@@ -212,7 +249,7 @@ return (
 
         <Row>
         <Col xs={12}>
-        <p class="aboutInfo">I've also designed/done the CSS for a handful of subreddits. Please checkout /r/RMS_Titanic and /r/TedLasso on the old version of reddit to see.</p>
+        <p class="aboutInfo">I've also designed/done the CSS for a handful of subreddits. Please checkout /r/RMS_Titanic and /r/TedLasso on the old version of reddit linked below.</p>
         <p class="break" />
         <p class="break" />
         </Col>
@@ -223,14 +260,20 @@ return (
         <img src={TedLasso} class="portfolioPic" alt="Screenshot of Ted Lasso Reddit" />
         <p class="break" />
         <p class="break" />
+        <div class="portfolioBtn">
         <Button size="large" class="portfolioBtn" href="https://old.reddit.com/r/TedLasso/" target="_blank">LINK</Button>
+        </div>
+        <p class="break" />
+        <p class="break" />
         </Col>
 
         <Col xs={12} md={6}>
         <img src={Titanic} class="portfolioPic" alt="Screenshot of RMS_Titanic Reddit" />
         <p class="break" />
         <p class="break" />
+        <div class="portfolioBtn">
         <Button size="large" class="portfolioBtn" href="https://old.reddit.com/r/rms_titanic/" target="_blank">LINK</Button>
+        </div>
         <p class="break" />
         <p class="break" />
         </Col>
