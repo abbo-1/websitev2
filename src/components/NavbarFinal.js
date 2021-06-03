@@ -28,7 +28,7 @@ function NavbarFinal() {
   <img
     alt=""
     src={logo}
-    width="100%"
+    max-width="100%"
     height="50"
     className="d-inline-block align-top"
   />{' '}
