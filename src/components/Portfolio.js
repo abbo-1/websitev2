@@ -29,7 +29,9 @@ return (
             </div>
         </Col>
         <Col xs={1} md={2}>
-            <Button id="xBtn" variant="outline-dark" >CLOSE</Button>
+            <Button id="xBtn" variant="outline-dark" onClick='closeModal'>CLOSE</Button>
+            <Button id="xBtn" variant="outline-dark" >CLOSE TEST</Button>
+            <Button id="xBtn" variant="outline-dark" >CLOSE TEST 2</Button>
         </Col>
         </Row>
 
