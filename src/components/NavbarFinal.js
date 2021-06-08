@@ -46,7 +46,7 @@ function NavbarFinal() {
   onHide={handleCloseBackground}
   dialogClassName="main-modal"
   >
-{/* <Button variant="outline-dark" onClick={handleClose}>Close</Button> */}
+<Button variant="outline-dark" id="closeBtn" onClick={handleCloseBackground}>Close</Button>
 <Background/>
 </Modal>
 
@@ -55,7 +55,7 @@ function NavbarFinal() {
   onHide={handleClosePortfolio}
   dialogClassName="main-modal2"
   >
-{/* <Button variant="outline-dark" onClick={handleClose}>Close</Button> */}
+<Button variant="outline-dark" id="closeBtn2" onClick={handleClosePortfolio}>Close</Button>
 <Portfolio/>
 </Modal>
 

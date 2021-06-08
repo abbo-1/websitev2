@@ -95,7 +95,8 @@ button:hover {
 }
 
 #greetingDiv {
-  padding-top: 10%;
+  /* padding-top: 10%; */
+  padding-top: 50px;
   padding-bottom: 50px;
   background: transparent;
 }
@@ -393,4 +394,22 @@ a.linkButtons:hover {
   margin: auto;
   width: 50%;
   text-align: center;
+}
+
+#closeBtn {
+  color: white;
+
+}
+
+#closeBtn:hover {
+  background-color: #f0326b;
+}
+
+#closeBtn2 {
+  color: white;
+}
+
+#closeBtn2:hover {
+  background-color: #fbff07;
+  color: black;
 }

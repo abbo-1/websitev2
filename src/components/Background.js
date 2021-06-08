@@ -16,14 +16,11 @@ function Background() {
       return (
         <Container>
         <Row>
-        <Col xs={11} md={10}>
+        <Col xs={12} md={12}>
             <div class="aboutInfoTitle">
 				<h2>My Background</h2>
             </div>
          </Col>
-        <Col xs={1} md={2}>
-            <Button id="xBtn" variant="outline-dark" >CLOSE</Button>
-        </Col>
         </Row>
         <Row>
         <Col xs={{span: 12, order: 1 }} md={{ span: 6, order: 1 }}>

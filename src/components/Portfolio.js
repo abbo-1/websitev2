@@ -1,5 +1,6 @@
 import Divider from '@material-ui/core/Divider';
 import { Row, Col, Container, Button } from "react-bootstrap";
+import {useState} from "react"
 
 import ThisPage from "../images/portfolio/thiswebsite.png"
 import FamPage from "../images/portfolio/familyweb.png"
@@ -17,21 +18,15 @@ import Titanic from "../images/portfolio/rmsTitanic.png"
 import GunslingersLogo from "../images/portfolio/gunslingersLogo2.png"
 import Weibebuilding from "../images/portfolio/weibebuilding.png"
 
-function Portfolio() {
-
+function Portfolio(props) {
 
 return (
         <Container>
         <Row>
-        <Col xs={11} md={10}>
+        <Col xs={12} md={12}>
             <div class="aboutInfoTitle">
-				<h2>Here are a few of the projects i've worked on:</h2>
+				<h2>Here are a few of the projects I've worked on:</h2>
             </div>
-        </Col>
-        <Col xs={1} md={2}>
-            <Button id="xBtn" variant="outline-dark" onClick='closeModal'>CLOSE</Button>
-            <Button id="xBtn" variant="outline-dark" >CLOSE TEST</Button>
-            <Button id="xBtn" variant="outline-dark" >CLOSE TEST 2</Button>
         </Col>
         </Row>
 
