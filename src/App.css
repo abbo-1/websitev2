@@ -100,7 +100,8 @@ button:hover {
 
 #greetingDiv {
   /* padding-top: 10%; */
-  padding-top: 5%;
+  /* padding-top: 5%; */
+  padding-top:15vh;
   padding-bottom: 50px;
   background: transparent;
 }

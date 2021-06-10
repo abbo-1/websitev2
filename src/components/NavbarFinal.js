@@ -37,7 +37,7 @@ function NavbarFinal() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto" >
           <Nav.Link onClick={handleShowBackground}>Background</Nav.Link>
-          <p>.</p>
+          {/* <p>.</p> */}
           <Nav.Link  onClick={handleShowPortfolio}>Things I've Made</Nav.Link>
         </Nav>
       </Navbar.Collapse>
