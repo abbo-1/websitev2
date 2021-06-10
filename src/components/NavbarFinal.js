@@ -22,23 +22,46 @@ function NavbarFinal() {
 
 
     return (
+    <Navbar bg="dark" variant="dark" expand="lg" sticky="top" id="NavbarFinal">
+      <Navbar.Brand>
+        <img
+          alt=""
+          src={logo}
+          max-width="100%"
+          height="50"
+          className="d-inline-block align-top"
+          />{' '}
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-<Navbar sticky="top" bg="dark" variant="dark" id="NavbarFinal">
-<Navbar.Brand>
-  <img
-    alt=""
-    src={logo}
-    max-width="100%"
-    height="50"
-    className="d-inline-block align-top"
-  />{' '}
-</Navbar.Brand>
-<Nav className="ml-auto" >
-<Nav.Link onClick={handleShowBackground}>Background</Nav.Link>
-<p>.</p>
-<Nav.Link  onClick={handleShowPortfolio}>Things I've Made</Nav.Link>
-</Nav>
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="ml-auto" >
+          <Nav.Link onClick={handleShowBackground}>Background</Nav.Link>
+          <p>.</p>
+          <Nav.Link  onClick={handleShowPortfolio}>Things I've Made</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
 
+
+{/* // ......................
+// <Navbar defaultExpanded  sticky="top" bg="dark" variant="dark" id="NavbarFinal">
+// <Navbar.Brand>
+//   <img
+//     alt=""
+//     src={logo}
+//     max-width="100%"
+//     height="50"
+//     className="d-inline-block align-top"
+//   />{' '}
+// </Navbar.Brand>
+// <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+// <Navbar.Collapse id="responsive-navbar-nav">
+// <Nav className="ml-auto" >
+// <Nav.Link onClick={handleShowBackground}>Background</Nav.Link>
+// <p>.</p>
+// <Nav.Link  onClick={handleShowPortfolio}>Things I've Made</Nav.Link>
+// </Nav>
+// </Navbar.Collapse> */}
 
 
 <Modal 
@@ -59,19 +82,9 @@ function NavbarFinal() {
 <Portfolio/>
 </Modal>
 
-
 </Navbar>
-
-
 )
-// onClick={openThingsMade}
-/* <Modal
-  open={open}
-  onClose={openThingsMade}
-  aria-labelledby="simple-modal-title"
-  aria-describedby="simple-modal-description"
->
-</Modal> */
 }
+
 
 export default NavbarFinal

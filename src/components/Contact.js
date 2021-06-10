@@ -108,6 +108,8 @@ return (
             </div>
             </Col>
             <Col xs={12} md={4}>
+            <p class="break" />
+            <p class="break" />
             <div class="text-center">
             <img src={email}  class="contactLogos" alt="Email Icon" />
 					{/* <h3 class="contactHeader">E-MAIL</h3> */}
@@ -118,6 +120,8 @@ return (
             </div>
             </Col>
             <Col xs={12} md={4}>
+            <p class="break" />
+            <p class="break" />
             <div class="text-center">
             <img src={linkedin}  class="contactLogos" alt="LinkedIn Logo" />
 					{/* <h3 class="contactHeader">LINKED IN</h3> */}
