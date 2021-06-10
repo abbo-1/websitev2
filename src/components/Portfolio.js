@@ -54,10 +54,10 @@ return (
         <p class="break" />
         </Col>
         <Col xs={{ span: 12, order: 3 }} md={{ span: 6, order: 3 }}>
-        <p class="aboutInfo">I designed this website- it's not a template! I used React, React-bootstrap, Material-ui, and many other self-designed elements. The original iteration of this website was much simpler as it was made in pure javascript. I also was looking for excuses to practice hooks. 
+        <p class="aboutInfo">I designed this very website- it's not a template! I used React, React-bootstrap, Material-ui, and several other self-designed elements. The original iteration of this website was much simpler. It was made in pure javascript. I redesigned it so I could get more experience with React (and work with hooks specifically). 
         <p class="break" />
         <p class="break" />
-        My goal was to create something simple, clean, and intuitive. I'm happy with how it's turned out- particularly the buttons on the main page that will copy my related web addresses directly to the clipboard and give an alert.</p>
+        My goal was to create something simple, clean, and intuitive. I'm happy with how it's turned out- particularly the buttons on the main page that copy the related web addresses directly to the clipboard, and then gives an alert.</p>
         </Col>
         </Row>
 
@@ -89,7 +89,7 @@ return (
         <p class="aboutInfo">This is the first major project I embarked on after I left boot camp. I was hired to create a webpage that would make my client's years of family history research available online for others. I used primarily React, with resources from Material-ui and Semantic-ui- and help from independent projects like react-lightbox.
         <p class="break" />
         <p class="break" />
-        Being my first solo project, this project was an education to say the least. The fact that there was so much information to organize made React the perfect solution for this particular project. The biographies/information pages came out really well and though there's already some things i'd like to go back and tweak, i'm proud of the final result.</p>
+        Being my first solo project, this project was an education to say the least. The fact that there was so much information to organize made React the perfect solution for this particular project. The biographies/information pages came out really well and, though there are still some things i'd like to go back and tweak, i'm proud of the final result.</p>
         </Col>
         </Row>
         
