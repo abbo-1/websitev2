@@ -3,6 +3,10 @@
   /* overflow: auto */
 }
 
+html {
+  background-image: url("./images/background.png");
+}
+
 .background {
   background-image: url("./images/background.png");
   background-color: #1f2532;
@@ -12,7 +16,7 @@
   font-size: calc(12px + 2vmin);
   color: white;
   min-height: 100vh;
-  box-shadow: 0 4px 2px -2px black;
+
 }
 
 .background2 {
@@ -119,6 +123,7 @@ button:hover {
   display:block;
   margin:auto;
   font-size: 30pt;
+
 }
 
 #text {
