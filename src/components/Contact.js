@@ -97,6 +97,8 @@ return (
         <Row>
         <ThemeProvider theme={theme}>
             <Col xs={12} md={4}>
+            <p class="break" />
+            <p class="break" />
             <div class="text-center">
             <img src={github}  class="contactLogos" alt="Github Logo" />
 					{/* <h3 class="contactHeader">GITHUB</h3> */}
