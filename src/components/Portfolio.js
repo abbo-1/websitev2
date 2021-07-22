@@ -117,10 +117,10 @@ return (
         <p class="break" />
         </Col>
         <Col xs={{ span: 12, order: 9 }} md={{ span: 6, order: 9 }}>
-        <p class="aboutInfo">Anyone who knows anything about me knows that i'm an amateur Titanic historian. This app is still under construction- as of mid-2021 it's still in it's nascent stages but I wanted to include it here as a place holder and to share some information about a project i'm currently working on.
+        <p class="aboutInfo">Anyone who knows anything about me knows that i'm a total and complete Titanic enthusiast- and by enthusiast I mean enthusiastic about the historical event not the tragic loss of life. This app is still under construction- as of mid-2021 it's still in it's nascent stages but I wanted to include it here as a place holder and to share some information about a project i'm currently working on.
         <p class="break" />
         <p class="break" />
-        This is by far the most ambitious project I've attempted. If it ends up as i've envisioned it, it will utilize React and Redux in order to display a birds-eye view of the ship's deck where the user can interact with the lifeboats to really understand what on the cold April night in 1912. I will update this as I make progress!
+        This is by far the most ambitious project I've attempted. If it ends up as i've envisioned it, it will utilize React and Redux in order to display a birds-eye view of the ship's deck where the user can interact with the lifeboats to really understand what happened (and when) on that cold April night in 1912. I will update this as I make progress!
         </p>
         </Col>
         </Row>
