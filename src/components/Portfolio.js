@@ -4,6 +4,7 @@ import {useState} from "react"
 
 import ThisPage from "../images/portfolio/thiswebsite.png"
 import FamPage from "../images/portfolio/familyweb.png"
+import BookPage from "../images/portfolio/bookweb.png"
 import TitanicExp from "../images/portfolio/titanicconstruction.png"
 import TastingBoard from "../images/portfolio/tastingBoard1.png"
 import TastingBoardSite from "../images/portfolio/tastingBoardSite.gif"
@@ -90,6 +91,38 @@ return (
         <p class="break" />
         <p class="break" />
         Being my first solo project, this project was an education to say the least. The fact that there was so much information to organize made React the perfect solution for this particular project. The biographies/information pages came out really well and, though there are still some things i'd like to go back and tweak, i'm proud of the final result.</p>
+        </Col>
+        </Row>
+        
+        <Divider class="divider" variant="middle"/>
+
+        <Row>
+        <Col xs={{ span: 12, order: 4 }} md={{ span: 12, order: 4 }}>
+        <div class="portfolioTitle">
+        Book Website
+        </div>
+        </Col>
+        <Col xs={{ span: 12, order: 5 }} md={{ span: 6, order: 5 }}>
+        <img src={BookPage} class="portfolioPic" alt="A screenshot of an author's webpage" />
+        <p class="break" />
+        <p class="break" />
+        
+        <Row>
+        <div class="portfolioBtn">
+        <Button size="large" class="portfolioBtn" href="http://alexandergray.us/" target="_blank">LINK</Button>
+        </div>
+        <div class="portfolioBtn">
+        <Button size="large" class="portfolioBtn" href="https://github.com/abbo-1/alexander_grey" target="_blank">CODE</Button>
+        </div>
+        </Row>
+        <p class="break" />
+        <p class="break" />
+        </Col>
+        <Col xs={{ span: 12, order: 6 }} md={{ span: 6, order: 6 }}>
+        <p class="aboutInfo">A simple, single page site built in react. I used react-bootstrap and a lot of free resources
+        <p class="break" />
+        <p class="break" />
+        asdasd.</p>
         </Col>
         </Row>
         
