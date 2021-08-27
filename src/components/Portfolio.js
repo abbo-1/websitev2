@@ -119,10 +119,8 @@ return (
         <p class="break" />
         </Col>
         <Col xs={{ span: 12, order: 6 }} md={{ span: 6, order: 6 }}>
-        <p class="aboutInfo">A simple, single page site built in react. I used react-bootstrap and a lot of free resources
+        <p class="aboutInfo">A simple, single page site built in react! I used react-bootstrap and a package called 'react-typewriter' to replicate the sterotypical look of offical government documents. This was a fun little project that helped me get more comfortable with react.
         <p class="break" />
-        <p class="break" />
-        asdasd.</p>
         </Col>
         </Row>
         
