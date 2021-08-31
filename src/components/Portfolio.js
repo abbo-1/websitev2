@@ -119,8 +119,11 @@ return (
         <p class="break" />
         </Col>
         <Col xs={{ span: 12, order: 6 }} md={{ span: 6, order: 6 }}>
-        <p class="aboutInfo">A simple, single page site built in react! I used react-bootstrap and a package called 'react-typewriter' to replicate the sterotypical look of offical government documents. This was a fun little project that helped me get more comfortable with react.
+        <p class="aboutInfo">A simple, single-page site built in react. I also used react-bootstrap. I had fun designing a website that was meant to be heavily theme'd. I found a react component called TypewriterJS that would create the effect of displaying text as though it was being typed out.
         <p class="break" />
+        <p class="break" />
+        Myself, and the authors, were very pleased with the final result.
+        </p>
         </Col>
         </Row>
         
