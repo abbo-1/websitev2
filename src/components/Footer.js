@@ -5,7 +5,7 @@ function Footer() {
 
     return (
         <div id="footer">
-            <p id="footerTxt">Copyright 2021</p>
+            <p id="footerTxt">Website designed and maintained entirely by me!</p>
         </div>
 )
     }
