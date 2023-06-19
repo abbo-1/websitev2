@@ -1,4 +1,5 @@
 import coffeepic from '../images/photo2.png'
+import photo from '../images/photo3.png'
 import resume from '../documents/abbottResume.pdf'
 import { Row, Col, Alert, Container} from "react-bootstrap";
 
@@ -7,7 +8,7 @@ function Greetings() {
         <Container>
         <Row id="greetingDiv">
             <Col xs={12} md={6}>
-                <img src={coffeepic}  id="coffeepic" alt="A photo of me holding coffee, exactly the kind of guy you want to hire" />
+                <img src={photo}  id="coffeepic" alt="A photo of me, exactly the kind of guy you want to hire" />
             </Col>
             <Col xs={12} md={6}>
                 <p id="greetingsText">Greetings!</p>
@@ -16,7 +17,7 @@ function Greetings() {
                 <a href={resume} target="_blank" id="resumeBTN">Résumé</a>
                 {/* I went with the fancy spelling because otherwise it felt like it needed a "STOP" and "FAST FORWARD" button next to it. */}
             </Col>
-            </Row>
+        </Row>
         </Container>
     )
 }
